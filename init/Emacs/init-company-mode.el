@@ -112,43 +112,22 @@
   ;; navigation
   (define-key company-active-map "\t" nil)
   (define-key company-active-map [tab] nil)
-  (define-key company-active-map (kbd "<tab>") nil)
-  (define-key company-active-map (kbd "<S-tab>") nil)
-  (define-key company-active-map (kbd "M-j") 'company-complete-selection)
-  (define-key company-active-map (kbd "M-i") 'company-complete-common)
+  (define-key company-active-map (kbd "<tab>") 'company-select-next)
+  (define-key company-active-map (kbd "<S-tab>") 'company-select-previous)
+  (define-key company-active-map (kbd "<return>") 'company-complete-selection)
   (define-key company-active-map (kbd "M-h") 'company-show-doc-buffer)
   (define-key company-active-map (kbd "M-l") 'company-show-location)
   ;; (setq company-search-regexp-function #regexp-quote)
-  (define-key company-active-map (kbd "M-s") 'company-search-candidates)
+  (define-key company-active-map (kbd "C-s") 'company-search-candidates)
   (define-key company-active-map (kbd "C-M-s") 'company-filter-candidates)
   ;; nested searching map.
   (define-key company-search-map (kbd "M-g") 'company-search-toggle-filtering)
   (define-key company-search-map (kbd "C-g") 'company-search-abort)
-  (define-key company-search-map (kbd "M-s") 'company-search-repeat-forward)
-  (define-key company-search-map (kbd "M-r") 'company-search-repeat-backward)
-  (define-key company-search-map (kbd "M-n") 'company-search-repeat-forward)
-  (define-key company-search-map (kbd "M-p") 'company-search-repeat-backward)
-  (define-key company-search-map (kbd "M-o") 'company-search-kill-others)
-  (define-key company-search-map (kbd "M-j") 'company-complete-selection)
-
-  (defun company-new-line ()
-    "insert a literal return new line."
-    (interactive)
-    ;; (company-abort)
-    (company-cancel 'abort)
-    (newline-and-indent))
-
-  (define-key company-active-map [return] 'company-new-line)
-  (define-key company-active-map "\r" 'company-new-line)
-
-  (defun company-space ()
-    "insert a literal return new line."
-    (interactive)
-    ;; (company-abort)
-    (company-cancel 'abort)
-    (insert " "))
-  
-  (define-key company-active-map (kbd "SPC") 'company-space)
+  (define-key company-search-map (kbd "C-s") 'company-search-repeat-forward)
+  (define-key company-search-map (kbd "C-r") 'company-search-repeat-backward)
+  (define-key company-search-map (kbd "C-n") 'company-search-repeat-forward)
+  (define-key company-search-map (kbd "C-p") 'company-search-repeat-backward)
+  (define-key company-search-map (kbd "C-o") 'company-search-kill-others)
 
   ;; [ company-yasnippet ]
   ;; make `company-yasnippet' work for prefix like `%link_to'.
