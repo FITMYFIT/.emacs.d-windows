@@ -128,11 +128,6 @@
   :after magit
   :init (add-hook 'magit-status-mode-hook 'turn-on-magit-gitflow))
 
-;;; [ magit-p4 ] -- Magit plugin integrating git-p4 add-on.
-
-;; (use-package magit-p4
-;;   :ensure t)
-
 ;;; [ git-messenger ] -- popup commit message at current line.
 
 (use-package git-messenger
@@ -147,16 +142,6 @@
               ;; git-messenger:handled-backends '(git svn)
               git-messenger:use-magit-popup t))
 
-;;; [ git-timemachine ] -- time-machine of Git revisions.
-
-;; (use-package git-timemachine
-;;   :ensure t)
-
-;;; [ magit-tbdiff ] -- topic branch interdiff
-
-;; (use-package magit-tbdiff
-;;   :ensure t)
-
 ;;; [ magit-diff-flycheck ] -- Flycheck for Magit diff buffers!
 
 (use-package magit-diff-flycheck
@@ -164,81 +149,11 @@
   :defer t
   :commands (magit-diff-flycheck))
 
-;;; [ magit-lfs ] -- Magit support for GLFS: Git Large File System
-
-;; (use-package magit-lfs
-;;   :ensure t)
-
-;;; [ magit-stgit ] -- StGit extension for Magit
-
-;; (use-package magit-stgit
-;;   :ensure t
-;;   :config
-;;   (add-hook 'magit-mode-hook 'magit-stgit-mode)
-;;   )
-
-;;; [ magit-topgit ] -- TopGit extension for Magit.
-
-;; (use-package magit-topgit
-;;   :ensure t
-;;   :config
-;;   (add-hook 'magit-mode-hook 'magit-topgit-mode)
-;;   )
-
-;;; [ pcmpl-git ] -- Complete both git commands and their options and arguments.
-
-;; (use-package pcmpl-git
-;;   :ensure t)
-
-;;; [ magit-todos ] -- Show source file TODOs in Magit.
-
-;; (use-package magit-todos
-;;   :ensure t
-;;   :defer t
-;;   :init (magit-todos-mode 1))
-
-;;; [ magit-org-todos ] -- Display file "todo.org" (in project root path) to your Magit status section.
-
-(use-package magit-org-todos
-  :ensure t
-  :ensure projectile
-  :defer t
-  :after magit
-  :init (magit-org-todos-autoinsert)
-  (with-eval-after-load 'projectile
-    (define-key projectile-command-map (kbd "C-o")  'magit-org-todos--magit-visit-org-todo)))
-
 ;;; [ forge ] -- Work with Git forges, such as Github and Gitlab, from the comfort of Magit and the rest of Emacs.
 
 (use-package forge
   :ensure t
   :defer t)
-
-;;; [ magit-reviewboard ] -- integrate the ReviewBoard review software into magit.
-
-;; (use-package magit-reviewboard
-;;   :ensure t
-;;   :commands (magit-reviewboard-mode magit-reviewboard-list)
-;;   :custom
-;;   (magit-reviewboard-base-uri
-;;    "https://reviews.reviewboard.org/api"
-;;    "Set Reviewboard api to point to official reviewboard server"))
-
-;;; [ flower ] -- Emacs task tracker client. Integration with Github, Gitlab, Atlassian Jira and Slack etc.
-
-;; (use-package flower
-;;   :ensure t
-;;   :defer t
-;;   :hook (org-mode . flower-mode)
-;;   :commands (flower-open
-;;              flower-org-show-task-info
-;;              flower-list-tasks flower-show-task-info)
-;;   :init (setq flower-tracker-queries
-;;               [("https://github.com/stardiviner/arduino-mode" nil nil)
-;;                ("https://github.com/stardiviner/kiwix.el" nil nil)])
-;;   (add-to-list 'display-buffer-alist
-;;                '("^\\*flower\\*"
-;;                  (display-buffer-reuse-window display-buffer-below-selected))))
 
 
 
