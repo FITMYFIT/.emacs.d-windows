@@ -41,7 +41,7 @@
   :ensure t
   :defer t
   :delight indent-guide-mode
-  :init
+  :init (indent-guide-global-mode)
   (setq indent-guide-recursive t
         ;; - 0 to avoid zero-column guide line.
         ;; - -1 to show all indent lines.
@@ -54,23 +54,6 @@
   ;; │ ┃  ▍ ┇ ┋ ┊ ┆ ╽ ╿
   (setq indent-guide-char "┃")
   ;; (setq indent-guide-char ":")
-
-  ;; global
-  ;; works with `indent-guide-global-mode'
-  (with-eval-after-load 'indent-guide
-    (add-to-list 'indent-guide-inhibit-modes 'org-mode)
-    (add-to-list 'indent-guide-inhibit-modes 'web-mode)
-    (add-to-list 'indent-guide-inhibit-modes 'emacs-lisp-mode)
-    (add-to-list 'indent-guide-inhibit-modes 'clojure-mode)
-    (add-to-list 'indent-guide-inhibit-modes 'lisp-mode)
-    (add-to-list 'indent-guide-inhibit-modes 'scheme-mode))
-  ;; (indent-guide-global-mode)
-
-  ;; specific modes
-  (defun my/indent-guide-mode-enable ()
-    (unless (member major-mode indent-guide-inhibit-modes)
-      (indent-guide-mode 1)))
-  (add-hook 'prog-mode-hook #'my/indent-guide-mode-enable)
   )
 
 
