@@ -85,13 +85,7 @@
 (require 'init-emacs-search)
 (require 'init-emacs-highlight)
 (require 'init-emacs-regex)
-(require 'init-emacs-comint)
-(require 'init-emacs-subprocess)
-;; (require 'init-emacs-rpc)
-(require 'init-emacs-network)
-;; (require 'init-emacs-xwidget)
 (require 'init-emacs-customize)
-(require 'init-emacs-accessibility)
 
 
 ;;; Programming
