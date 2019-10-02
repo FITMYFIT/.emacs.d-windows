@@ -85,7 +85,6 @@
 (require 'init-emacs-search)
 (require 'init-emacs-highlight)
 (require 'init-emacs-regex)
-(require 'init-emacs-overlay)
 (require 'init-emacs-vcs)
 (require 'init-emacs-shell)
 (require 'init-emacs-comint)
