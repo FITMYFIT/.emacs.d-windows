@@ -50,6 +50,9 @@
   (define-key yas-minor-mode-map (kbd "C-c \\") 'yas-insert-snippet)
   )
 
+(use-package yasnippet-snippets
+  :ensure t)
+
 ;;; [ ivy-yasnippet ] -- preview yasnippet snippets with Ivy.
 
 (use-package ivy-yasnippet
