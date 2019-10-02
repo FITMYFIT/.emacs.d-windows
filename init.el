@@ -103,7 +103,23 @@
 (require 'init-prog-sidebar)
 (require 'init-prog-document)
 (require 'init-prog-compile)
-(require 'init-prog-build-system)
+
+(unless (boundp 'build-system-prefix)
+  (define-prefix-command 'build-system-prefix))
+(global-set-key (kbd "<f6>") 'build-system-prefix)
+
+(require 'init-make)
+(require 'init-cmake)
+
+;;; [ build-helper ] -- Utilities to help build code.
+(use-package build-helper
+  :ensure t
+  :defer t
+  :bind (:map build-system-prefix
+              ("<f5>" . compile)
+              ("<f7>" . build-helper-run)
+              ("<f8>" . build-helper-re-run)))
+
 (require 'init-prog-lint)
 (require 'init-prog-debug)
 (require 'init-prog-test)
