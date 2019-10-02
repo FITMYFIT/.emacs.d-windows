@@ -52,26 +52,8 @@
   ;; custom indent line char
   ;; 1: use `indent-guide-char'.
   ;; │ ┃  ▍ ┇ ┋ ┊ ┆ ╽ ╿
-  ;; (setq indent-guide-char "┃")
+  (setq indent-guide-char "┃")
   ;; (setq indent-guide-char ":")
-
-  ;; 2: use face-attribute stipple pixmap data.
-  (setq indent-guide-char " ")
-  (set-face-attribute 'indent-guide-face nil
-                      :inherit nil
-                      ;; small dots
-                      ;; :stipple (list 7 4 (string 16 0 0 0))
-                      ;; straight line
-                      :stipple (list 7 4 (string 16 16 16 16))
-                      )
-
-  (set-face-attribute 'indent-guide-face nil
-                      :background nil
-                      :foreground (cl-case (alist-get 'background-mode (frame-parameters))
-                                    ('light
-                                     (color-darken-name (face-background 'default) 35))
-                                    ('dark
-                                     (color-lighten-name (face-background 'default) 20))))
 
   ;; global
   ;; works with `indent-guide-global-mode'
