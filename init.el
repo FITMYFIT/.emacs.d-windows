@@ -129,7 +129,6 @@
 
 ;;; Programming Languages
 (require 'init-prog-lang-C-common)
-(require 'init-prog-tags)
 
 
 ;;; Programming Tools

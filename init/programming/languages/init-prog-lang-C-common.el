@@ -67,6 +67,30 @@
   :defer t
   :hook (c++-mode-hook . modern-c++-font-lock-mode))
 
+;;; [ ob-C ]
+
+(use-package ob-C
+  :defer t
+  :commands (org-babel-execute:C org-babel-execute:C++)
+  :config
+  (add-to-list 'org-babel-load-languages '(C . t))
+  (org-babel-do-load-languages 'org-babel-load-languages org-babel-load-languages)
+  (add-to-list 'org-babel-tangle-lang-exts '("C" . "c"))
+  (add-to-list 'org-babel-tangle-lang-exts '("C++" . "cpp"))
+  
+  ;; (setq org-babel-C++-compiler "g++") ; "g++", "c++", "g++ -v"
+  (add-to-list 'org-babel-default-header-args:C
+               '(:results . "output"))
+  ;; (add-to-list 'org-babel-default-header-args:C++
+  ;;              '(:results . "output"))
+  )
+
+;;; [ semantic-mode ]
+
+(hook-modes c-dialects-mode
+  (when (memq major-mode '(c-mode c++-mode objc-mode))
+    (semantic-mode 1)))
+
 ;;; [ Irony-mode ] --- A C/C++ minor mode for Emacs powered by libclang.
 
 (use-package irony
@@ -104,6 +128,10 @@
   :defer t
   :after irony
   :init (add-hook 'irony-mode-hook #'irony-eldoc))
+
+;;; [ Tags ]
+
+(require 'init-prog-tags)
 
 (use-package flycheck-irony
   :ensure t
@@ -149,15 +177,15 @@
 
 ;;; [ flycheck-cstyle ] --
 
-(use-package flycheck-cstyle
-  :ensure t
-  :defer t
-  :after flycheck
-  :config
-  (flycheck-cstyle-setup)
-  (flycheck-add-next-checker 'c/c++-cppcheck '(warning . cstyle))
-  ;; (flycheck-add-next-checker 'c/c++-clang '(warning . cstyle))
-  )
+;; (use-package flycheck-cstyle
+;;   :ensure t
+;;   :defer t
+;;   :after flycheck
+;;   :config
+;;   (flycheck-cstyle-setup)
+;;   (flycheck-add-next-checker 'c/c++-cppcheck '(warning . cstyle))
+;;   ;; (flycheck-add-next-checker 'c/c++-clang '(warning . cstyle))
+;;   )
 
 ;;; [ flycheck-clang-analyzer ] -- Integrate Clang Static Analyzer with flycheck for on-the-fly static analysis in Emacs.
 
