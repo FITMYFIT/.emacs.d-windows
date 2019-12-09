@@ -1,0 +1,150 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("spherical.h" include nil nil [681 703])
+            ("saint-venant.h" include nil nil [704 729])
+            ("terrain.h" include nil nil [730 750])
+            ("okada.h" include nil nil [751 769])
+            ("maxlevel" variable
+               (:default-value "10"
+                :type "int")
+                nil [829 847])
+            ("MINLEVEL" variable (:constant-flag t) nil [856 864])
+            ("ETAE" variable (:constant-flag t) nil [875 879])
+            ("HMAXE" variable (:constant-flag t) nil [939 944])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1100 1109])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1110 1124]))                  
+                :type "int")
+                nil [1090 2385])
+            ("hmax" variable
+               (:dereference 1
+                :type ("scalar" type (:type "class") nil nil))
+                nil [2514 2528])
+            ("n" variable
+               (:dereference 1
+                :default-value "- radiation(0)"
+                :type "int")
+                nil [2861 2888])
+            ("n" variable
+               (:dereference 1
+                :default-value "+ radiation(0)"
+                :type "int")
+                nil [2891 2918])
+            ("n" variable
+               (:dereference 1
+                :default-value "- radiation(0)"
+                :type "int")
+                nil [2921 2948])
+            ("adapt" function (:type "int") nil [3794 4497])
+            ("init" function
+               (:arguments 
+                  ( ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5106 5111]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [5094 5884])
+            ("fault2" function
+               (:arguments 
+                  ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6006 6018]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [5992 6174])
+            ("fault3" function
+               (:arguments 
+                  ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6190 6202]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [6176 6357])
+            ("fault4" function
+               (:arguments 
+                  ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6373 6385]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [6359 6541])
+            ("fault5" function
+               (:arguments 
+                  ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6557 6570]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [6543 6726])
+            ("logfile" function
+               (:arguments 
+                  ( ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6858 6860]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [6843 7590])
+            ("snapshots" function
+               (:arguments 
+                  ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7771 7774])
+                    ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7780 7783]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [7754 8004])
+            ("movies" function
+               (:arguments 
+                  ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9481 9483]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [9467 10814])
+            ("gauges" variable
+               (:dereference 1
+                :default-value "{
+  // file   lon      lat         description
+  {\"coco\", 96.88,  -12.13, \"Cocos Islands, Australia\"},
+  {\"colo\", 79.83,    6.93, \"Colombo, Sri Lanka\"},
+  {\"hani\", 73.18,    6.77, \"Hanimaadhoo, Maldives\"},
+  {\"male\", 73.52,    4.18, \"Male, Maldives\"},
+  {\"gana\", 73.17,   -0.68, \"Gan, Maldives\"},
+  {\"dieg\", 72.38,    -7.3, \"Diego Garcia, UK\"},
+  {\"rodr\", 63.42,  -19.67, \"Rodriguez I., Mauritius\"},
+  {\"loui\", 57.5,   -20.15, \"Port Louis, Mauritius\"},
+  {\"lare\", 55.3,   -20.92, \"La Reunion, France\"},
+  {\"hill\", 115.73, -31.82, \"Hillarys, Australia\"},
+  {\"sala\", 54,         17, \"Salalah, Oman\"},
+  {\"laru\", 55.53,   -4.68, \"Pointe La Rue, Seychelles\"},
+  {\"lamu\", 40.9,    -2.27, \"Lamu, Kenya\"},
+  {\"zanz\", 39.18,   -6.15, \"Zanzibar, Tanzania\"},
+  {\"chen\", 80.3,     13.1, \"Chennai, India\"},
+  {\"para\", 86.7,    20.26, \"Paradip, India\"},
+  {\"visa\", 83.28,   17.68, \"Visakhapatnam, India\"},
+  {\"koch\", 76.26,    9.96, \"Kochi, India\"},
+  {\"morm\", 73.8,    15.42, \"Mormugao, India\"},
+  {\"okha\", 69.08,   22.47, \"Okha, India\"},
+  {\"tuti\", 78.15,     8.8, \"Tuticorin, India\"},
+  {\"taru\", 99.65,   6.702, \"Tarutao, Thailand\"},
+  {\"tapa\", 98.425,  7.765, \"Tapaonoi, Thailand\"},
+  {NULL}
+}"
+                :type ("Gauge" type (:type "class") nil nil))
+                nil [11066 12268])
+            ("output_gauges" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("gauges" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12305 12312]))                  
+                :type "int")
+                nil [12290 12320])
+            ("kml" function
+               (:arguments 
+                  ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13588 13591]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [13577 14727])
+            ("adapt" function
+               (:prototype-flag t
+                :type "int")
+                nil [14836 14844]))          
+      :file "tsunami.c"
+      :pointmax 14845
+      :fsize 14850
+      :lastmodtime '(23796 63467 336965 590000)
+      :unmatched-syntax '((semantic-list 14830 . 14835) (symbol 14821 . 14829) (punctuation 14833 . 14834) (punctuation 14832 . 14833) (symbol 14815 . 14820) (punctuation 14833 . 14834) (punctuation 14832 . 14833) (number 13593 . 13595) (punctuation 13591 . 13592) (punctuation 13590 . 13591) (semantic-list 12313 . 12318) (semantic-list 12284 . 12289) (symbol 12276 . 12283) (punctuation 12287 . 12288) (punctuation 12286 . 12287) (symbol 12270 . 12275) (punctuation 12287 . 12288) (punctuation 12286 . 12287) (punctuation 9483 . 9484) (punctuation 9482 . 9483) (number 7785 . 7788) (punctuation 7783 . 7784) (punctuation 7782 . 7783) (punctuation 7778 . 7779) (number 7776 . 7778) (punctuation 7774 . 7775) (punctuation 7773 . 7774) (punctuation 6860 . 6861) (punctuation 6859 . 6860) (punctuation 2920 . 2921) (symbol 2919 . 2920) (punctuation 2890 . 2891) (symbol 2889 . 2890) (punctuation 2860 . 2861) (symbol 2859 . 2860))
+      :lexical-table 
+        '(("HMAXE" . ((number "5e-2" 948 . 952)))
+          ("MINLEVEL" . ((number "5" 865 . 866)))
+          ("ETAE" . ((number "1e-2" 884 . 888)))
+          )
+))
+  :file "!home!liu!basilisk!src!examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -22,7 +22,7 @@
 ;; (setq fancy-startup-text)
 
 ;;; initial message
-(setq inhibit-startup-echo-area-message "Hacking happy! stardiviner.")
+(setq inhibit-startup-echo-area-message "Hacking happy! Richard.")
 (setq-default initial-scratch-message
               (concat ";; Happy Hacking " (or user-login-name "") "!\n\n"))
 
@@ -103,6 +103,7 @@
 (require 'init-prog-sidebar)
 (require 'init-prog-document)
 (require 'init-prog-compile)
+(require 'init-prog-lang-tex)
 
 (unless (boundp 'build-system-prefix)
   (define-prefix-command 'build-system-prefix))
@@ -125,11 +126,14 @@
 (require 'init-prog-test)
 (require 'init-prog-project)
 (require 'init-prog-vcs)
-
+(require 'unicad);;used to show chineses characteristics
 
 ;;; Programming Languages
 (require 'init-prog-lang-C-common)
 
+
+;;latex 2019.12.6 Ricard
+(require 'init-latex)
 
 ;;; Programming Tools
 
@@ -161,5 +165,38 @@
                      (format "%.2f seconds"
                              (float-time (time-subtract after-init-time before-init-time)))
                      gcs-done)))
+
+
+(add-to-list 'auto-mode-alist '("\\.dat\\'" . org-mode))
+(add-to-list 'auto-mode-alist '("\\.plt\\'" . gnuplot-mode));;set org-mode of .dat files 20191030
+(require 'linum)
+(global-linum-mode t);;show line number
+(global-auto-revert-mode t);;reload files if corrected
+
+(add-hook 'LaTeX-mode-hook 'turn-on-cdlatex)
+
+;;rewrite the selection
+(delete-selection-mode t)
+
+;;high light the current line
+(global-hl-line-mode t)
+
+;;disable auto backup
+(setq make-backup-files nil)
+
+(put 'dired-find-alternate-file 'disabled nil)
+;; 主动加载 Dired Mode
+;; (require 'dired)
+;; (defined-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
+;; 延迟加载
+(with-eval-after-load 'dired
+  (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
+
+
+;;for theme
+(load-theme 'monokai t)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;; init.el ends here

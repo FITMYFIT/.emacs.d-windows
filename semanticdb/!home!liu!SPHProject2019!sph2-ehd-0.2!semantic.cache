@@ -1,0 +1,91 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SPHEHD.h" include nil nil [1 20])
+            ("CSPHEHD" function
+               (:constructor-flag t
+                :parent "CSPHEHD"
+                :type ("CSPHEHD" type (:type "class") nil nil))
+                nil [23 45])
+            ("CSPHEHD" function
+               (:destructor-flag t
+                :parent "CSPHEHD"
+                :type "void")
+                nil [47 70])
+            ("Solve" function
+               (:parent "CSPHEHD"
+                :arguments 
+                  ( ("Region" variable
+                       (:reference 1
+                        :type ("CRegion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [92 109]))                  
+                :type "void")
+                nil [72 14021])
+            ("Solve2" function
+               (:parent "CSPHEHD"
+                :arguments 
+                  ( ("Region" variable
+                       (:reference 1
+                        :type ("CRegion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14047 14064]))                  
+                :type "void")
+                nil [14026 19221])
+            ("output" function
+               (:parent "CSPHEHD"
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [19247 19259])
+                    ("b" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [19260 19271])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [19272 19278]))                  
+                :type "void")
+                nil [19226 19964])
+            ("output2" function
+               (:parent "CSPHEHD"
+                :arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19989 20001])
+                    ("x" variable
+                       (:reference 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20002 20013])
+                    ("b" variable
+                       (:reference 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20014 20026])
+                    ("outputname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20026 20044]))                  
+                :type "void")
+                nil [19967 20882])
+            ("outputV" function
+               (:parent "CSPHEHD"
+                :arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20907 20919])
+                    ("outputname" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20919 20937]))                  
+                :type "void")
+                nil [20885 21478]))          
+      :file "SPHEHD.cpp"
+      :pointmax 21479
+      :fsize 21504
+      :lastmodtime '(23969 13969 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "SPHEHD.h"
+      :fsize 1686
+      :lastmodtime '(23969 7631 0 0)))
+  :file "!home!liu!SPHProject2019!sph2-ehd-0.2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

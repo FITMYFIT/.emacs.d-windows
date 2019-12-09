@@ -1,0 +1,103 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("poisson.h" include nil nil [813 833])
+            ("dt" variable
+               (:typemodifiers ("extern")
+                :type "double")
+                nil [834 851])
+            ("phi" variable
+               (:dereference 1
+                :type ("scalar" type (:type "class") nil nil))
+                nil [1087 1108])
+            ("rhoe" variable
+               (:dereference 1
+                :type ("scalar" type (:type "class") nil nil))
+                nil [1087 1108])
+            ("epsilon" variable
+               (:dereference 1
+                :type ("vector" type (:type "class") nil nil))
+                nil [1114 1136])
+            ("K" variable
+               (:dereference 1
+                :type ("vector" type (:type "class") nil nil))
+                nil [1114 1136])
+            ("mgphi" variable (:type ("mgstats" type (:type "class") nil nil)) nil [1137 1151])
+            ("defaults" function
+               (:arguments 
+                  ( ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1169 1174]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [1153 1583])
+            ("tracer_diffusion" function
+               (:arguments 
+                  ( ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1609 1611]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [1585 2816]))          
+      :file "implicit.h"
+      :pointmax 2817
+      :fsize 2816
+      :lastmodtime '(23796 63463 689133 724000)
+      :unmatched-syntax '((punctuation 1611 . 1612) (punctuation 1610 . 1611) (symbol 1109 . 1113)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("defaults" function
+               (:arguments 
+                  ( ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [577 582]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [561 637])
+            ("acceleration" function
+               (:arguments 
+                  ( ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [835 837]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [815 2083]))          
+      :file "stress.h"
+      :pointmax 2084
+      :fsize 2083
+      :lastmodtime '(23796 63463 693133 538000)
+      :unmatched-syntax '((punctuation 837 . 838) (punctuation 836 . 837)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("phi" variable
+               (:typemodifiers ("extern")
+                :type ("scalar" type (:type "class") nil nil))
+                nil [497 515])
+            ("Species" type
+               (:members 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("scalar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [536 547])
+                    ("z" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [613 621])
+                    ("dt" variable (:type "double") (reparse-symbol classsubparts) [639 649])
+                    ("K" variable
+                       (:pointer 1
+                        :type ("vector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [666 677]))                  
+                :type "struct")
+                nil [517 723])
+            ("ohmic_flux" function
+               (:arguments 
+                  ( ("sp" variable (:type ("Species" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [742 760]))                  
+                :type "void")
+                nil [725 1629]))          
+      :file "pnp.h"
+      :pointmax 1630
+      :fsize 1629
+      :lastmodtime '(23796 63463 693133 538000)
+      :unmatched-syntax nil))
+  :file "!home!liu!basilisk!src!ehd!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

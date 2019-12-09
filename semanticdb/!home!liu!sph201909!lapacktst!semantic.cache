@@ -1,0 +1,56 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("dgesv_" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [153 161])
+                    ("nrhs" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [162 173])
+                    ("a" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [193 204])
+                    ("lda" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [205 215])
+                    ("ipiv" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [216 226])
+                    ("b" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [242 252])
+                    ("ldb" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [253 263])
+                    ("info" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [264 276]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [140 277])
+            ("main" function (:type "int") nil [280 972]))          
+      :file "lapacktsts.cpp"
+      :pointmax 973
+      :fsize 972
+      :lastmodtime '(23958 65343 25021 838000)
+      :unmatched-syntax nil))
+  :file "!home!liu!sph201909!lapacktst!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

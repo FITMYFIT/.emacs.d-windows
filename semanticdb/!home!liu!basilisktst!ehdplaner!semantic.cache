@@ -1,0 +1,60 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ehd/implicit.h" include nil nil [1 26])
+            ("run.h" include nil nil [27 43])
+            ("output.h" include nil nil [44 63])
+            ("ic" variable (:type "int") nil [415 422])
+            ("tfinal" variable (:type "double") nil [423 445])
+            ("E1" variable (:type "double") nil [423 445])
+            ("E2" variable (:type "double") nil [423 445])
+            ("phi" variable
+               (:dereference 1
+                :default-value "dirichlet(0)"
+                :type "int")
+                nil [447 474])
+            ("phi" variable
+               (:dereference 1
+                :default-value "dirichlet(1)"
+                :type "int")
+                nil [475 502])
+            ("beta" variable (:constant-flag t) nil [512 516])
+            ("eta" variable (:constant-flag t) nil [528 531])
+            ("main" function (:type "int") nil [536 1279])
+            ("init" function
+               (:arguments 
+                  ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1293 1298]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [1281 1830])
+            ("dt" variable
+               (:default-value "dtnext (DT)"
+                :type "int")
+                nil [1853 1870])
+            ("result" function
+               (:arguments 
+                  ( ("" variable (:type ("t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1996 2006]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [1982 2218])
+            ("snapshot" function
+               (:arguments 
+                  ( ("" variable (:type ("i" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2236 2238]))                  
+                :type ("event" type (:type "class") nil nil))
+                nil [2220 2340]))          
+      :file "ehdplaner.c"
+      :pointmax 2341
+      :fsize 2345
+      :lastmodtime '(24004 47648 731701 383000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("eta" . ((number "2." 532 . 534)))
+          ("beta" . ((number "3." 517 . 519)))
+          )
+))
+  :file "!home!liu!basilisktst!ehdplaner!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

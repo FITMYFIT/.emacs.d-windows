@@ -6,32 +6,33 @@
 
 
 ;;; Code:
-
+
 ;;; [ X Resources ]
 
 (setq inhibit-x-resources t)
 
-;;; [ font lock ]
+;; ;;; [ font lock ]
 
 (global-font-lock-mode t)
 
-(require 'color) ; for `color-lighten-name' and `color-darken-name'
+;; (require 'color) ; for `color-lighten-name' and `color-darken-name'
 
-;;; [ leuven-theme ]
-
-;; (use-package leuven-theme
-;;   :load-path "~/Code/Emacs/leuven-theme/"
-;;   :no-require t
-;;   :init (require 'leuven-theme)
-;;   :config (load-theme 'leuven t))
 
 ;;; [ one-themes ] -- One color scheme.
 
-(use-package one-themes
+;; (use-package one-themes
+;;   :ensure t
+;;   :no-require t
+;;   :init (require 'one-themes)
+;;   :config (load-theme 'one-dark t))
+
+(use-package monokai-theme
   :ensure t
   :no-require t
-  :init (require 'one-themes)
+  :init (require 'monokai-theme)
   :config (load-theme 'one-dark t))
+
+
 
 
 (provide 'init-emacs-theme)

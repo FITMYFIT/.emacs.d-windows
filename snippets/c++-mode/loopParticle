@@ -1,0 +1,9 @@
+# -*- mode: c++-mode -*-
+# name: loop Region._PtList
+# key: lpt
+# --
+for(unsigned int i=0;i!=Region._PtList.size();++i)
+{
+  PtPtr=&Region._PtList[i];
+  $0
+}

@@ -1,0 +1,2388 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "copyrght.h"
+      :pointmax 3714
+      :fsize 3713
+      :lastmodtime '(12150 43930 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stddef.h" include (:system-flag t) nil [1108 1127])
+            ("stdlib.h" include (:system-flag t) nil [1128 1147])
+            ("math.h" include (:system-flag t) nil [1148 1165])
+            ("string.h" include (:system-flag t) nil [1166 1185])
+            ("laspack/matrix.h" include nil nil [1187 1214])
+            ("laspack/errhandl.h" include nil nil [1215 1244])
+            ("laspack/copyrght.h" include nil nil [1245 1274])
+            ("ZeroEl" variable
+               (:typemodifiers ("static")
+                :default-value "{ 0, 0.0 }"
+                :type ("ElType" type (:type "class") nil nil))
+                nil [1276 1310])
+            ("ElCompar" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("El1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1332 1348])
+                    ("El2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1349 1365]))                  
+                :type "int")
+                nil [1312 1366])
+            ("M_Constr" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1382 1392])
+                    ("Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1393 1404])
+                    ("RowDim" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1405 1419])
+                    ("ClmDim" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1420 1434])
+                    ("ElOrder" variable (:type ("ElOrderType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1449 1469])
+                    ("Instance" variable (:type ("InstanceType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1470 1492])
+                    ("OwnData" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1493 1509]))                  
+                :type "void")
+                nil [1368 2705])
+            ("M_Destr" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2720 2730]))                  
+                :type "void")
+                nil [2707 3501])
+            ("M_SetName" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3518 3528])
+                    ("Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3529 3540]))                  
+                :type "void")
+                nil [3503 3855])
+            ("M_GetName" function
+               (:pointer 1
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3873 3883]))                  
+                :type "char")
+                nil [3857 4010])
+            ("M_GetRowDim" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4031 4041]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [4012 4208])
+            ("M_GetClmDim" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4229 4239]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [4210 4409])
+            ("M_GetElOrder" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4436 4446]))                  
+                :type ("ElOrderType" type (:type "class") nil nil))
+                nil [4411 4644])
+            ("M_SetLen" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4660 4670])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4671 4682])
+                    ("Len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4683 4694]))                  
+                :type "void")
+                nil [4646 5910])
+            ("M_GetLen" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5928 5938])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5939 5950]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [5912 6399])
+            ("M_SetEntry" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6417 6427])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6428 6439])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6440 6453])
+                    ("Pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6454 6465])
+                    ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6466 6475]))                  
+                :type "void")
+                nil [6401 6962])
+            ("M_GetPos" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6980 6990])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6991 7002])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7003 7016]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [6964 7480])
+            ("M_GetVal" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7496 7506])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7507 7518])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7519 7532]))                  
+                :type ("Real" type (:type "class") nil nil))
+                nil [7482 7988])
+            ("M_AddVal" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8004 8014])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8015 8026])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8027 8040])
+                    ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8041 8050]))                  
+                :type "void")
+                nil [7990 8424])
+            ("M_GetEl" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8439 8449])
+                    ("Row" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8450 8461])
+                    ("Clm" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8462 8473]))                  
+                :type ("Real" type (:type "class") nil nil))
+                nil [8426 9560])
+            ("M_SortEl" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9576 9586]))                  
+                :type "void")
+                nil [9562 10074])
+            ("ElCompar" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("El1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10096 10112])
+                    ("El2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10113 10129]))                  
+                :type "int")
+                nil [10076 10383])
+            ("M_Lock" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10397 10407]))                  
+                :type "void")
+                nil [10385 10479])
+            ("M_Unlock" function
+               (:arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10495 10505]))                  
+                :type "void")
+                nil [10481 10686]))          
+      :file "matrix.c"
+      :pointmax 10687
+      :fsize 10686
+      :lastmodtime '(12327 20737 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MATRIX_H" variable (:constant-flag t) nil [1133 1141])
+            ("stdlib.h" include (:system-flag t) nil [1143 1162])
+            ("laspack/lastypes.h" include nil nil [1164 1193])
+            ("laspack/elcmp.h" include nil nil [1194 1220])
+            ("laspack/copyrght.h" include nil nil [1221 1250])
+            ("Matrix" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("Name" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [1273 1284])
+                          ("RowDim" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1289 1303])
+                          ("ClmDim" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1308 1322])
+                          ("ElOrder" variable (:type ("ElOrderType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1327 1347])
+                          ("Instance" variable (:type ("InstanceType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1352 1374])
+                          ("LockLevel" variable (:type "int") (reparse-symbol classsubparts) [1379 1393])
+                          ("Multipl" variable (:type "double") (reparse-symbol classsubparts) [1398 1413])
+                          ("OwnData" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1418 1434])
+                          ("Len" variable
+                             (:pointer 1
+                              :type ("size_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1439 1451])
+                          ("El" variable
+                             (:pointer 2
+                              :type ("ElType" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1456 1468])
+                          ("ElSorted" variable
+                             (:pointer 1
+                              :type ("Boolean" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1473 1491]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1252 1501])
+            ("M_Constr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1517 1527])
+                    ("Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1528 1539])
+                    ("RowDim" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1540 1554])
+                    ("ClmDim" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1555 1569])
+                    ("ElOrder" variable (:type ("ElOrderType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1584 1604])
+                    ("Instance" variable (:type ("InstanceType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1605 1627])
+                    ("OwnData" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1628 1644]))                  
+                :type "void")
+                nil [1503 1645])
+            ("M_Destr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1659 1669]))                  
+                :type "void")
+                nil [1646 1670])
+            ("M_SetName" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1686 1696])
+                    ("Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1697 1708]))                  
+                :type "void")
+                nil [1671 1709])
+            ("M_GetName" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1726 1736]))                  
+                :type "char")
+                nil [1710 1737])
+            ("M_GetRowDim" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1757 1767]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1738 1768])
+            ("M_GetClmDim" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1788 1798]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1769 1799])
+            ("M_GetElOrder" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1825 1835]))                  
+                :type ("ElOrderType" type (:type "class") nil nil))
+                nil [1800 1836])
+            ("M_SetLen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1851 1861])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1862 1873])
+                    ("Len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1874 1885]))                  
+                :type "void")
+                nil [1837 1886])
+            ("M_GetLen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1903 1913])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1914 1925]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1887 1926])
+            ("M_SetEntry" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1943 1953])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1954 1965])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1966 1979])
+                    ("Pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1980 1991])
+                    ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1992 2001]))                  
+                :type "void")
+                nil [1927 2002])
+            ("M_GetPos" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2019 2029])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2030 2041])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2042 2055]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2003 2056])
+            ("M_GetVal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2071 2081])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2082 2093])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2094 2107]))                  
+                :type ("Real" type (:type "class") nil nil))
+                nil [2057 2108])
+            ("M_AddVal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2123 2133])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2134 2145])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2146 2159])
+                    ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2160 2169]))                  
+                :type "void")
+                nil [2109 2170])
+            ("M__GetLen" variable (:constant-flag t) nil [2213 2222])
+            ("M__SetEntry" variable (:constant-flag t) nil [2277 2288])
+            ("M__GetPos" variable (:constant-flag t) nil [2459 2468])
+            ("M__GetVal" variable (:constant-flag t) nil [2533 2542])
+            ("M__AddVal" variable (:constant-flag t) nil [2607 2616])
+            ("M_GetEl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2729 2739])
+                    ("Row" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2740 2751])
+                    ("Clm" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2752 2763]))                  
+                :type ("Real" type (:type "class") nil nil))
+                nil [2716 2764])
+            ("M_SortEl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2780 2790]))                  
+                :type "void")
+                nil [2766 2791])
+            ("M_Lock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2805 2815]))                  
+                :type "void")
+                nil [2793 2816])
+            ("M_Unlock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("M" variable
+                       (:pointer 1
+                        :type ("Matrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2831 2841]))                  
+                :type "void")
+                nil [2817 2842]))          
+      :file "matrix.h"
+      :pointmax 2866
+      :fsize 2865
+      :lastmodtime '(12150 43932 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("M__GetVal" (spp-arg-list ("PtrM" "RoC" "Entry") 2542 . 2560) . 
+              ((semantic-list "(PtrM)" 2568 . 2574) (punctuation "-" 2574 . 2575) (punctuation ">" 2575 . 2576) (symbol "El" 2576 . 2578) (semantic-list "[RoC]" 2578 . 2583) (semantic-list "[Entry]" 2583 . 2590) (punctuation "." 2590 . 2591) (symbol "Val" 2591 . 2594)))
+          ("M__GetLen" (spp-arg-list ("PtrM" "RoC") 2222 . 2233) . 
+              ((semantic-list "(PtrM)" 2248 . 2254) (punctuation "-" 2254 . 2255) (punctuation ">" 2255 . 2256) (symbol "Len" 2256 . 2259) (semantic-list "[RoC]" 2259 . 2264)))
+          ("M__SetEntry" (spp-arg-list ("PtrM" "RoC" "Entry" "Pos_" "Val_") 2288 . 2318) . ((semantic-list "{ \\
+                (PtrM)->El[RoC][Entry].Pos = (Pos_); \\
+                (PtrM)->El[RoC][Entry].Val = (Val_); \\
+            }" 2319 . 2446)))
+          ("M__AddVal" (spp-arg-list ("PtrM" "RoC" "Entry" "Val_") 2616 . 2640) . ((semantic-list "{ \\
+                (PtrM)->El[RoC][Entry].Val += (Val_); \\
+            }" 2641 . 2714)))
+          ("M__GetPos" (spp-arg-list ("PtrM" "RoC" "Entry") 2468 . 2486) . 
+              ((semantic-list "(PtrM)" 2494 . 2500) (punctuation "-" 2500 . 2501) (punctuation ">" 2501 . 2502) (symbol "El" 2502 . 2504) (semantic-list "[RoC]" 2504 . 2509) (semantic-list "[Entry]" 2509 . 2516) (punctuation "." 2516 . 2517) (symbol "Pos" 2517 . 2520)))
+          ("MATRIX_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("INCROOT" variable (:default-value ("..")) nil [435 449])
+            ("LIBDEST" variable (:default-value ("$(HOME)/lib$(ARCH_EXT)")) nil [521 555])
+            ("INCDEST" variable (:default-value ("$(HOME)/include")) nil [555 582])
+            ("SHELL" variable (:default-value ("/bin/sh")) nil [667 684])
+            ("LIBNAME" variable (:default-value ("laspack")) nil [685 704])
+            ("LIBRARY" variable (:default-value ("lib$(LIBNAME).a")) nil [705 732])
+            ("HDRS" variable (:default-value ("copyrght.h" "eigenval.h" "elcmp.h" "errhandl.h" "factor.h" "itersolv.h" "lastypes.h" "matrix.h" "mlsolv.h" "operats.h" "precond.h" "qmatrix.h" "rtc.h" "vector.h" "version.h")) nil [733 942])
+            ("EXTHDRS" variable nil nil [943 954])
+            ("SRCS" variable (:default-value ("eigenval.c" "errhandl.c" "factor.c" "itersolv.c" "matrix.c" "mlsolv.c" "operats.c" "precond.c" "qmatrix.c" "rtc.c" "vector.c")) nil [955 1108])
+            ("OBJS" variable (:default-value ("eigenval.o" "errhandl.o" "factor.o" "itersolv.o" "matrix.o" "mlsolv.o" "operats.o" "precond.o" "qmatrix.o" "rtc.o" "vector.o")) nil [1109 1262])
+            ("LIBS" variable nil nil [1263 1271])
+            ("COMPFLAGS" variable nil nil [1272 1286])
+            ("LIBLOCAL" variable (:default-value ("/usr/local/lib")) nil [1388 1414])
+            ("INCLOCAL" variable (:default-value ("/usr/local/include")) nil [1414 1444])
+            ("INSTALL" variable (:default-value ("mv")) nil [1445 1459])
+            ("ARFLAGS" variable (:default-value ("cru")) nil [1460 1475])
+            ("LINTLIBS" variable nil nil [1476 1487])
+            ("LINTFLAGS" variable (:default-value ("-u" "-I$(INCROOT)" "$(CFLAGS)")) nil [1488 1526])
+            ("MAKEFILE" variable (:default-value ("makefile")) nil [1527 1547])
+            ("PRINT" variable (:default-value ("pr")) nil [1548 1560])
+            ("PRINTFLAGS" variable nil nil [1561 1574])
+            ("LP" variable (:default-value ("lp")) nil [1575 1584])
+            ("LPFLAGS" variable nil nil [1585 1597])
+            ("all" function (:arguments ("$(LIBRARY)")) nil [1598 1615])
+            ("clean" function (:arguments (";" "@rm" "-rf" "$(OBJS)" "core")) nil [1616 1646])
+            ("clobber" function (:arguments (";" "@rm" "-f" "$(OBJS)" "$(LIBRARY)" "core" "tags")) nil [1647 2374])
+            ("depend" function (:arguments (";" "@mkmf" "-f" "$(MAKEFILE)")) nil [2375 2405])
+            ("echo" function (:arguments (";" "@echo" "$(HDRS)" "$(SRCS)")) nil [2406 2436])
+            ("index" function (:arguments (";" "@ctags" "-wx" "$(HDRS)" "$(SRCS)")) nil [2437 2473])
+            ("install" function (:arguments ("$(LIBRARY)")) nil [2474 3007])
+            ("install-local" function (:arguments ("$(LIBRARY)")) nil [3008 3638])
+            ("lint" function (:arguments ("$(LINTLIBS)" "$(HDRS)" "$(EXTHDRS)" "$(SRCS)")) nil [3639 3729])
+            ("print" function (:arguments (";" "@$(PRINT)" "$(PRINTFLAGS)" "$(HDRS)" "$(SRCS)" "|" "$(LP)" "$(LPFLAGS)")) nil [3730 3798])
+            ("tags" function (:arguments ("$(HDRS)" "$(SRCS)")) nil [3799 3857])
+            ("touch" function (:arguments (";" "@touch" "$(HDRS)" "$(SRCS)" "$(MAKEFILE)")) nil [3858 3902])
+            ("update" function (:arguments ("$(LIBDEST)/$(LIBRARY)")) nil [3903 3934])
+            ("d2u" function (:arguments (";" "@d2u" "$(HDRS)" "$(SRCS)")) nil [3935 3963])
+            ("c" function (:arguments (";" "@$(MAKE)" "-f" "$(MAKEFILE)" "clean")) nil [3964 3999])
+            ("cl" function (:arguments (";" "@$(MAKE)" "-f" "$(MAKEFILE)" "clobber")) nil [3999 4037])
+            ("i" function (:arguments (";" "@$(MAKE)" "-f" "$(MAKEFILE)" "install")) nil [4037 4085])
+            ("il" function (:arguments (";" "@$(MAKE)" "-f" "$(MAKEFILE)" "install-local")) nil [4085 4129])
+            ("l" function (:arguments (";" "@$(MAKE)" "-f" "$(MAKEFILE)" "lint")) nil [4129 4163])
+            ("t" function (:arguments (";" "@$(MAKE)" "-f" "$(MAKEFILE)" "touch")) nil [4163 4198])
+            ("u" function (:arguments (";" "@$(MAKE)" "-f" "$(MAKEFILE)" "update")) nil [4198 4235])
+            ("$(LIBRARY)" function (:arguments ("$(OBJS)" "$(MAKEFILE)")) nil [4236 4362])
+            ("$(LIBDEST)" function (:arguments ("$(HDRS)" "$(EXTHDRS)" "$(SRCS)" "$(LIBS)")) nil [4363 4457])
+            (".c.o" function (:arguments (";" "$(CC)" "-I$(INCROOT)" "$(CFLAGS)" "$(COMPFLAGS)" "-c" "$<")) nil [4458 4514])
+            (".p.o" function (:arguments (";" "pc" "$(PFLAGS)" "$(COMPFLAGS)" "-c" "$<")) nil [4514 4554]))          
+      :file "makefile"
+      :pointmax 4595
+      :fsize 4594
+      :lastmodtime '(23988 56484 621341 280000)
+      :unmatched-syntax '((symbol 4593 . 4594) (punctuation 4592 . 4593) (symbol 4589 . 4591) (semantic-list 4577 . 4588) (punctuation 4576 . 4577) (semantic-list 4567 . 4575) (punctuation 4566 . 4567) (symbol 4562 . 4565) (punctuation 4559 . 4560) (punctuation 4558 . 4559) (symbol 4554 . 4558) (bol 4554 . 4554)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ELCMP_H" variable (:constant-flag t) nil [1132 1139])
+            ("float.h" include (:system-flag t) nil [1141 1159])
+            ("math.h" include (:system-flag t) nil [1160 1177])
+            ("laspack/copyrght.h" include nil nil [1179 1208])
+            ("Real" type
+               (:typedef ("double")
+                :type "typedef")
+                nil [1210 1230])
+            ("IsZero" variable (:constant-flag t) nil [1423 1429])
+            ("IsOne" variable (:constant-flag t) nil [1468 1473])
+            ("ElType" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("Pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1563 1574])
+                          ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1579 1588]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1542 1598]))          
+      :file "elcmp.h"
+      :pointmax 1621
+      :fsize 1620
+      :lastmodtime '(12150 43932 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ELCMP_H")
+          ("IsOne" (spp-arg-list ("a") 1473 . 1476) . ((semantic-list "(fabs(a - 1.0) < 10.0 * DBL_EPSILON)" 1478 . 1514)))
+          ("IsZero" (spp-arg-list ("a") 1429 . 1432) . ((semantic-list "(fabs(a) < 10.0 * DBL_MIN)" 1433 . 1459)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("QMATRIX_H" variable (:constant-flag t) nil [1134 1143])
+            ("stdlib.h" include (:system-flag t) nil [1145 1164])
+            ("laspack/lastypes.h" include nil nil [1166 1195])
+            ("laspack/elcmp.h" include nil nil [1196 1222])
+            ("laspack/vector.h" include nil nil [1223 1250])
+            ("laspack/copyrght.h" include nil nil [1251 1280])
+            ("QMatrixType" type
+               (:members 
+                  ( ("Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1315 1326])
+                    ("Dim" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1331 1342])
+                    ("Symmetry" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1347 1364])
+                    ("ElOrder" variable (:type ("ElOrderType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1369 1389])
+                    ("Instance" variable (:type ("InstanceType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1394 1416])
+                    ("LockLevel" variable (:type "int") (reparse-symbol classsubparts) [1421 1435])
+                    ("MultiplD" variable (:type "double") (reparse-symbol classsubparts) [1440 1456])
+                    ("MultiplU" variable (:type "double") (reparse-symbol classsubparts) [1461 1477])
+                    ("MultiplL" variable (:type "double") (reparse-symbol classsubparts) [1482 1498])
+                    ("OwnData" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1503 1519])
+                    ("Len" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1524 1536])
+                    ("El" variable
+                       (:pointer 2
+                        :type ("ElType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1541 1553])
+                    ("ElSorted" variable
+                       (:pointer 1
+                        :type ("Boolean" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1558 1576])
+                    ("DiagElAlloc" variable
+                       (:pointer 1
+                        :type ("Boolean" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1581 1602])
+                    ("DiagEl" variable
+                       (:pointer 2
+                        :type ("ElType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1607 1623])
+                    ("ZeroInDiag" variable
+                       (:pointer 1
+                        :type ("Boolean" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1628 1648])
+                    ("InvDiagEl" variable
+                       (:pointer 1
+                        :type ("Real" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1653 1669])
+                    ("UnitRightKer" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1674 1695])
+                    ("RightKerCmp" variable
+                       (:pointer 1
+                        :type ("Real" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1700 1718])
+                    ("UnitLeftKer" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1723 1743])
+                    ("LeftKerCmp" variable
+                       (:pointer 1
+                        :type ("Real" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1748 1765])
+                    ("EigenvalInfo" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1770 1789])
+                    ("ILUExists" variable
+                       (:pointer 1
+                        :type ("Boolean" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1794 1813])
+                    ("ILU" variable
+                       (:pointer 1
+                        :type ("QMatrixType" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1818 1842]))                  
+                :type "struct")
+                nil [1282 1853])
+            ("QMatrix" type
+               (:typedef ("QMatrixType" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1282 1853])
+            ("Q_Constr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1869 1880])
+                    ("Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1881 1892])
+                    ("Dim" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1893 1904])
+                    ("Symmetry" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1905 1922])
+                    ("ElOrder" variable (:type ("ElOrderType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1937 1957])
+                    ("Instance" variable (:type ("InstanceType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1958 1980])
+                    ("OwnData" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1981 1997]))                  
+                :type "void")
+                nil [1855 1998])
+            ("Q_Destr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2012 2023]))                  
+                :type "void")
+                nil [1999 2024])
+            ("Q_SetName" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2040 2051])
+                    ("Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2052 2063]))                  
+                :type "void")
+                nil [2025 2064])
+            ("Q_GetName" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2081 2092]))                  
+                :type "char")
+                nil [2065 2093])
+            ("Q_GetDim" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2110 2121]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2094 2122])
+            ("Q_GetSymmetry" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2145 2156]))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [2123 2157])
+            ("Q_GetElOrder" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2183 2194]))                  
+                :type ("ElOrderType" type (:type "class") nil nil))
+                nil [2158 2195])
+            ("Q_SetLen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2210 2221])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2222 2233])
+                    ("Len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2234 2245]))                  
+                :type "void")
+                nil [2196 2246])
+            ("Q_GetLen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2263 2274])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2275 2286]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2247 2287])
+            ("Q_SetEntry" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2304 2315])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2316 2327])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2328 2341])
+                    ("Pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2342 2353])
+                    ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2354 2363]))                  
+                :type "void")
+                nil [2288 2364])
+            ("Q_GetPos" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2381 2392])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2393 2404])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2405 2418]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2365 2419])
+            ("Q_GetVal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2434 2445])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2446 2457])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2458 2471]))                  
+                :type ("Real" type (:type "class") nil nil))
+                nil [2420 2472])
+            ("Q_AddVal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2487 2498])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2499 2510])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2511 2524])
+                    ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2525 2534]))                  
+                :type "void")
+                nil [2473 2535])
+            ("Q__GetLen" variable (:constant-flag t) nil [2578 2587])
+            ("Q__SetEntry" variable (:constant-flag t) nil [2642 2653])
+            ("Q__GetPos" variable (:constant-flag t) nil [2824 2833])
+            ("Q__GetVal" variable (:constant-flag t) nil [2898 2907])
+            ("Q__AddVal" variable (:constant-flag t) nil [2972 2981])
+            ("Q_GetEl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3075 3086])
+                    ("Row" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3087 3098])
+                    ("Clm" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3099 3110]))                  
+                :type ("Real" type (:type "class") nil nil))
+                nil [3062 3111])
+            ("Q_SortEl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3127 3138]))                  
+                :type "void")
+                nil [3113 3139])
+            ("Q_AllocInvDiagEl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3162 3173]))                  
+                :type "void")
+                nil [3140 3174])
+            ("Q_SetKer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3190 3201])
+                    ("RightKer" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3202 3219])
+                    ("LeftKer" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3220 3236]))                  
+                :type "void")
+                nil [3176 3237])
+            ("Q_KerDefined" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3259 3270]))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [3238 3271])
+            ("Q_EigenvalInfo" function
+               (:prototype-flag t
+                :pointer 2
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3295 3306]))                  
+                :type "void")
+                nil [3273 3307])
+            ("Q_Lock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3321 3332]))                  
+                :type "void")
+                nil [3309 3333])
+            ("Q_Unlock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3348 3359]))                  
+                :type "void")
+                nil [3334 3360]))          
+      :file "qmatrix.h"
+      :pointmax 3385
+      :fsize 3384
+      :lastmodtime '(12150 43934 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("Q__GetLen" (spp-arg-list ("PtrQ" "RoC") 2587 . 2598) . 
+              ((semantic-list "(PtrQ)" 2613 . 2619) (punctuation "-" 2619 . 2620) (punctuation ">" 2620 . 2621) (symbol "Len" 2621 . 2624) (semantic-list "[RoC]" 2624 . 2629)))
+          ("Q__SetEntry" (spp-arg-list ("PtrQ" "RoC" "Entry" "Pos_" "Val_") 2653 . 2683) . ((semantic-list "{ \\
+                (PtrQ)->El[RoC][Entry].Pos = (Pos_); \\
+                (PtrQ)->El[RoC][Entry].Val = (Val_); \\
+            }" 2684 . 2811)))
+          ("Q__AddVal" (spp-arg-list ("PtrQ" "RoC" "Entry" "Val_") 2981 . 3005) . 
+              ((semantic-list "(PtrQ)" 3024 . 3030) (punctuation "-" 3030 . 3031) (punctuation ">" 3031 . 3032) (symbol "El" 3032 . 3034) (semantic-list "[RoC]" 3034 . 3039) (semantic-list "[Entry]" 3039 . 3046) (punctuation "." 3046 . 3047) (symbol "Val" 3047 . 3050) (punctuation "+" 3051 . 3052) (punctuation "=" 3052 . 3053) (semantic-list "(Val_)" 3054 . 3060)))
+          ("Q__GetPos" (spp-arg-list ("PtrQ" "RoC" "Entry") 2833 . 2851) . 
+              ((semantic-list "(PtrQ)" 2859 . 2865) (punctuation "-" 2865 . 2866) (punctuation ">" 2866 . 2867) (symbol "El" 2867 . 2869) (semantic-list "[RoC]" 2869 . 2874) (semantic-list "[Entry]" 2874 . 2881) (punctuation "." 2881 . 2882) (symbol "Pos" 2882 . 2885)))
+          ("QMATRIX_H")
+          ("Q__GetVal" (spp-arg-list ("PtrQ" "RoC" "Entry") 2907 . 2925) . 
+              ((semantic-list "(PtrQ)" 2933 . 2939) (punctuation "-" 2939 . 2940) (punctuation ">" 2940 . 2941) (symbol "El" 2941 . 2943) (semantic-list "[RoC]" 2943 . 2948) (semantic-list "[Entry]" 2948 . 2955) (punctuation "." 2955 . 2956) (symbol "Val" 2956 . 2959)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stddef.h" include (:system-flag t) nil [1108 1127])
+            ("stdlib.h" include (:system-flag t) nil [1128 1147])
+            ("math.h" include (:system-flag t) nil [1148 1165])
+            ("string.h" include (:system-flag t) nil [1166 1185])
+            ("laspack/qmatrix.h" include nil nil [1187 1215])
+            ("laspack/errhandl.h" include nil nil [1216 1245])
+            ("laspack/copyrght.h" include nil nil [1246 1275])
+            ("ZeroEl" variable
+               (:typemodifiers ("static")
+                :default-value "{ 0, 0.0 }"
+                :type ("ElType" type (:type "class") nil nil))
+                nil [1277 1311])
+            ("ElCompar" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("El1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1333 1349])
+                    ("El2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1350 1366]))                  
+                :type "int")
+                nil [1313 1367])
+            ("Q_Constr" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1383 1394])
+                    ("Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1395 1406])
+                    ("Dim" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1407 1418])
+                    ("Symmetry" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1419 1436])
+                    ("ElOrder" variable (:type ("ElOrderType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1451 1471])
+                    ("Instance" variable (:type ("InstanceType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1472 1494])
+                    ("OwnData" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1495 1511]))                  
+                :type "void")
+                nil [1369 3681])
+            ("Q_Destr" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3696 3707]))                  
+                :type "void")
+                nil [3683 5489])
+            ("Q_SetName" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5506 5517])
+                    ("Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5518 5529]))                  
+                :type "void")
+                nil [5491 5844])
+            ("Q_GetName" function
+               (:pointer 1
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5862 5873]))                  
+                :type "char")
+                nil [5846 6000])
+            ("Q_GetDim" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6018 6029]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [6002 6189])
+            ("Q_GetSymmetry" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6213 6224]))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [6191 6440])
+            ("Q_GetElOrder" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6467 6478]))                  
+                :type ("ElOrderType" type (:type "class") nil nil))
+                nil [6442 6688])
+            ("Q_SetLen" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6704 6715])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6716 6727])
+                    ("Len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6728 6739]))                  
+                :type "void")
+                nil [6690 7838])
+            ("Q_GetLen" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7856 7867])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7868 7879]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [7840 8232])
+            ("Q_SetEntry" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8250 8261])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8262 8273])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8274 8287])
+                    ("Pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8288 8299])
+                    ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8300 8309]))                  
+                :type "void")
+                nil [8234 8666])
+            ("Q_GetPos" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8684 8695])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8696 8707])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8708 8721]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [8668 9082])
+            ("Q_GetVal" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9098 9109])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9110 9121])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9122 9135]))                  
+                :type ("Real" type (:type "class") nil nil))
+                nil [9084 9495])
+            ("Q_AddVal" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9511 9522])
+                    ("RoC" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9523 9534])
+                    ("Entry" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9535 9548])
+                    ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9549 9558]))                  
+                :type "void")
+                nil [9497 9824])
+            ("Q_GetEl" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9839 9850])
+                    ("Row" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9851 9862])
+                    ("Clm" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9863 9874]))                  
+                :type ("Real" type (:type "class") nil nil))
+                nil [9826 12644])
+            ("Q_SortEl" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12660 12671]))                  
+                :type "void")
+                nil [12646 13742])
+            ("Q_AllocInvDiagEl" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13766 13777]))                  
+                :type "void")
+                nil [13744 15608])
+            ("ElCompar" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("El1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15630 15646])
+                    ("El2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15647 15663]))                  
+                :type "int")
+                nil [15610 15917])
+            ("Q_SetKer" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15933 15944])
+                    ("RightKer" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15945 15962])
+                    ("LeftKer" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15963 15979]))                  
+                :type "void")
+                nil [15919 19070])
+            ("Q_KerDefined" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19093 19104]))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [19072 19546])
+            ("Q_EigenvalInfo" function
+               (:pointer 2
+                :arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19570 19581]))                  
+                :type "void")
+                nil [19548 19667])
+            ("Q_Lock" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19681 19692]))                  
+                :type "void")
+                nil [19669 19764])
+            ("Q_Unlock" function
+               (:arguments 
+                  ( ("Q" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19780 19791]))                  
+                :type "void")
+                nil [19766 19972]))          
+      :file "qmatrix.c"
+      :pointmax 19973
+      :fsize 19972
+      :lastmodtime '(12327 20683 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("VECTOR_H" variable (:constant-flag t) nil [1133 1141])
+            ("stdlib.h" include (:system-flag t) nil [1143 1162])
+            ("laspack/lastypes.h" include nil nil [1164 1193])
+            ("laspack/elcmp.h" include nil nil [1194 1220])
+            ("laspack/copyrght.h" include nil nil [1221 1250])
+            ("Vector" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("Name" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [1273 1284])
+                          ("Dim" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1289 1300])
+                          ("Instance" variable (:type ("InstanceType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1305 1327])
+                          ("LockLevel" variable (:type "int") (reparse-symbol classsubparts) [1332 1346])
+                          ("Multipl" variable (:type "double") (reparse-symbol classsubparts) [1351 1366])
+                          ("OwnData" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1371 1387])
+                          ("Cmp" variable
+                             (:pointer 1
+                              :type ("Real" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1392 1402]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1252 1412])
+            ("V_Constr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1428 1438])
+                    ("Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1439 1450])
+                    ("Dim" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1451 1462])
+                    ("Instance" variable (:type ("InstanceType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1463 1485])
+                    ("OwnData" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1493 1509]))                  
+                :type "void")
+                nil [1414 1510])
+            ("V_Destr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1524 1534]))                  
+                :type "void")
+                nil [1511 1535])
+            ("V_SetName" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1551 1561])
+                    ("Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1562 1573]))                  
+                :type "void")
+                nil [1536 1574])
+            ("V_GetName" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1591 1601]))                  
+                :type "char")
+                nil [1575 1602])
+            ("V_GetDim" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1619 1629]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1603 1630])
+            ("V_SetCmp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1645 1655])
+                    ("Ind" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1656 1667])
+                    ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1668 1677]))                  
+                :type "void")
+                nil [1631 1678])
+            ("V_SetAllCmp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1696 1706])
+                    ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1707 1716]))                  
+                :type "void")
+                nil [1679 1717])
+            ("V_SetRndCmp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1735 1745]))                  
+                :type "void")
+                nil [1718 1746])
+            ("V_GetCmp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1761 1771])
+                    ("Ind" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1772 1783]))                  
+                :type ("Real" type (:type "class") nil nil))
+                nil [1747 1784])
+            ("V_AddCmp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1799 1809])
+                    ("Ind" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1810 1821])
+                    ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1822 1831]))                  
+                :type "void")
+                nil [1785 1832])
+            ("V__SetCmp" variable (:constant-flag t) nil [1875 1884])
+            ("V__GetCmp" variable (:constant-flag t) nil [1944 1953])
+            ("V__AddCmp" variable (:constant-flag t) nil [2005 2014])
+            ("V_Lock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2076 2086]))                  
+                :type "void")
+                nil [2064 2087])
+            ("V_Unlock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2102 2112]))                  
+                :type "void")
+                nil [2088 2113]))          
+      :file "vector.h"
+      :pointmax 2137
+      :fsize 2136
+      :lastmodtime '(12150 43936 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("VECTOR_H")
+          ("V__GetCmp" (spp-arg-list ("PtrV" "Ind") 1953 . 1964) . 
+              ((semantic-list "(PtrV)" 1976 . 1982) (punctuation "-" 1982 . 1983) (punctuation ">" 1983 . 1984) (symbol "Cmp" 1984 . 1987) (semantic-list "[Ind]" 1987 . 1992)))
+          ("V__SetCmp" (spp-arg-list ("PtrV" "Ind" "Val") 1884 . 1900) . 
+              ((semantic-list "(PtrV)" 1907 . 1913) (punctuation "-" 1913 . 1914) (punctuation ">" 1914 . 1915) (symbol "Cmp" 1915 . 1918) (semantic-list "[Ind]" 1918 . 1923) (punctuation "=" 1924 . 1925) (semantic-list "(Val)" 1926 . 1931)))
+          ("V__AddCmp" (spp-arg-list ("PtrV" "Ind" "Val") 2014 . 2030) . 
+              ((semantic-list "(PtrV)" 2037 . 2043) (punctuation "-" 2043 . 2044) (punctuation ">" 2044 . 2045) (symbol "Cmp" 2045 . 2048) (semantic-list "[Ind]" 2048 . 2053) (punctuation "+" 2054 . 2055) (punctuation "=" 2055 . 2056) (semantic-list "(Val)" 2057 . 2062)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stddef.h" include (:system-flag t) nil [1108 1127])
+            ("stdlib.h" include (:system-flag t) nil [1128 1147])
+            ("string.h" include (:system-flag t) nil [1148 1167])
+            ("laspack/vector.h" include nil nil [1169 1196])
+            ("laspack/errhandl.h" include nil nil [1197 1226])
+            ("laspack/copyrght.h" include nil nil [1227 1256])
+            ("V_Constr" function
+               (:arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1272 1282])
+                    ("Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1283 1294])
+                    ("Dim" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1295 1306])
+                    ("Instance" variable (:type ("InstanceType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1307 1329])
+                    ("OwnData" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1344 1360]))                  
+                :type "void")
+                nil [1258 1994])
+            ("V_Destr" function
+               (:arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2009 2019]))                  
+                :type "void")
+                nil [1996 2228])
+            ("V_SetName" function
+               (:arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2245 2255])
+                    ("Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2256 2267]))                  
+                :type "void")
+                nil [2230 2582])
+            ("V_GetName" function
+               (:pointer 1
+                :arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2600 2610]))                  
+                :type "char")
+                nil [2584 2737])
+            ("V_GetDim" function
+               (:arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2755 2765]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [2739 2921])
+            ("V_SetCmp" function
+               (:arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2937 2947])
+                    ("Ind" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2948 2959])
+                    ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2960 2969]))                  
+                :type "void")
+                nil [2923 3264])
+            ("V_SetAllCmp" function
+               (:arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3283 3293])
+                    ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3294 3303]))                  
+                :type "void")
+                nil [3266 3565])
+            ("V_SetRndCmp" function
+               (:arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3584 3594]))                  
+                :type "void")
+                nil [3567 3914])
+            ("V_GetCmp" function
+               (:arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3930 3940])
+                    ("Ind" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3941 3952]))                  
+                :type ("Real" type (:type "class") nil nil))
+                nil [3916 4293])
+            ("V_AddCmp" function
+               (:arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4309 4319])
+                    ("Ind" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4320 4331])
+                    ("Val" variable (:type ("Real" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4332 4341]))                  
+                :type "void")
+                nil [4295 4637])
+            ("V_Lock" function
+               (:arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4651 4661]))                  
+                :type "void")
+                nil [4639 4733])
+            ("V_Unlock" function
+               (:arguments 
+                  ( ("V" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4749 4759]))                  
+                :type "void")
+                nil [4735 4940]))          
+      :file "vector.c"
+      :pointmax 4941
+      :fsize 4940
+      :lastmodtime '(12150 43930 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1108 1127])
+            ("string.h" include (:system-flag t) nil [1128 1147])
+            ("laspack/errhandl.h" include nil nil [1149 1178])
+            ("laspack/copyrght.h" include nil nil [1179 1208])
+            ("LASErrId" variable
+               (:typemodifiers ("static")
+                :default-value "LASOK"
+                :type ("LASErrIdType" type (:type "class") nil nil))
+                nil [1286 1323])
+            ("LASProcName" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type "char")
+                nil [1324 1356])
+            ("LASObject1Name" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type "char")
+                nil [1357 1392])
+            ("LASObject2Name" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type "char")
+                nil [1393 1428])
+            ("LASObject3Name" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL"
+                :type "char")
+                nil [1429 1464])
+            ("LASError" function
+               (:arguments 
+                  ( ("ErrId" variable (:type ("LASErrIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1480 1499])
+                    ("ProcName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1500 1515])
+                    ("Object1Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1516 1534])
+                    ("Object2Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1542 1560])
+                    ("Object3Name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1561 1579]))                  
+                :type "void")
+                nil [1466 2982])
+            ("LASBreak" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2998 3003]))                  
+                :type "void")
+                nil [2984 3053])
+            ("LASResult" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3078 3083]))                  
+                :type ("LASErrIdType" type (:type "class") nil nil))
+                nil [3055 3155])
+            ("WriteLASErrDescr" function
+               (:arguments 
+                  ( ("File" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3179 3190]))                  
+                :type "void")
+                nil [3157 5739]))          
+      :file "errhandl.c"
+      :pointmax 5740
+      :fsize 5739
+      :lastmodtime '(12150 43924 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("RTC_H" variable (:constant-flag t) nil [1130 1135])
+            ("laspack/lastypes.h" include nil nil [1137 1166])
+            ("laspack/vector.h" include nil nil [1167 1194])
+            ("laspack/itersolv.h" include nil nil [1195 1224])
+            ("laspack/copyrght.h" include nil nil [1225 1254])
+            ("IterIdType" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("JacobiIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1354 1367])
+                          ("SORForwIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1372 1386])
+                          ("SORBackwIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1391 1406])
+                          ("SSORIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1411 1422])
+                          ("ChebyshevIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1461 1477])
+                          ("CGIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1516 1525])
+                          ("CGNIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1530 1540])
+                          ("GMRESIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1545 1557])
+                          ("BiCGIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1562 1573])
+                          ("QMRIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1578 1588])
+                          ("CGSIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1593 1603])
+                          ("BiCGSTABIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1608 1623])
+                          ("MGIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1677 1686])
+                          ("NestedMGIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1691 1706])
+                          ("MGPCGIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1711 1723])
+                          ("BPXPCGIterId" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1728 1742]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1297 1754])
+            ("RTCAuxProcType" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1787 1791])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [1792 1799])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [1800 1807])
+                    ("" variable (:type ("IterIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1808 1819]))                  
+                :type "void")
+                nil [1764 1820])
+            ("SetRTCAccuracy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Eps" variable (:type "double") (reparse-symbol arg-sub-list) [1842 1853]))                  
+                :type "void")
+                nil [1822 1854])
+            ("SetRTCAuxProc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("AuxProc" variable (:type ("RTCAuxProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1874 1897]))                  
+                :type "void")
+                nil [1855 1898])
+            ("RTCResult" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Iter" variable (:type "int") (reparse-symbol arg-sub-list) [1917 1926])
+                    ("rNorm" variable (:type "double") (reparse-symbol arg-sub-list) [1927 1940])
+                    ("bNorm" variable (:type "double") (reparse-symbol arg-sub-list) [1941 1954])
+                    ("IterId" variable (:type ("IterIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1955 1973]))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [1899 1974])
+            ("GetLastNoIter" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1993 1998]))                  
+                :type "int")
+                nil [1975 1999])
+            ("GetLastAccuracy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2023 2028]))                  
+                :type "double")
+                nil [2000 2029]))          
+      :file "rtc.h"
+      :pointmax 2050
+      :fsize 2049
+      :lastmodtime '(12150 43934 0 0)
+      :unmatched-syntax '((TYPEDEF 1756 . 1763))
+      :lexical-table 
+        '(("RTC_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ITERSOLV_H" variable (:constant-flag t) nil [1135 1145])
+            ("laspack/vector.h" include nil nil [1147 1174])
+            ("laspack/qmatrix.h" include nil nil [1175 1203])
+            ("laspack/precond.h" include nil nil [1204 1232])
+            ("laspack/eigenval.h" include nil nil [1233 1262])
+            ("laspack/copyrght.h" include nil nil [1263 1292])
+            ("IterProcType" function
+               (:prototype-flag t
+                :pointer 1
+                :function-pointer t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1326 1336])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1337 1346])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1347 1356])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1357 1361])
+                    ("" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1366 1382])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [1383 1390]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [1302 1391])
+            ("JacobiIter" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1447 1458])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1459 1469])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1470 1480])
+                    ("NoIter" variable (:type "int") (reparse-symbol arg-sub-list) [1481 1492])
+                    ("Dummy" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1498 1520])
+                    ("Omega" variable (:type "double") (reparse-symbol arg-sub-list) [1521 1534]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [1428 1535])
+            ("SORForwIter" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1556 1567])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1568 1578])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1579 1589])
+                    ("NoIter" variable (:type "int") (reparse-symbol arg-sub-list) [1590 1601])
+                    ("Dummy" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1614 1636])
+                    ("Omega" variable (:type "double") (reparse-symbol arg-sub-list) [1637 1650]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [1536 1651])
+            ("SORBackwIter" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1673 1684])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1685 1695])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1696 1706])
+                    ("NoIter" variable (:type "int") (reparse-symbol arg-sub-list) [1707 1718])
+                    ("Dummy" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1731 1753])
+                    ("Omega" variable (:type "double") (reparse-symbol arg-sub-list) [1754 1767]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [1652 1768])
+            ("SSORIter" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1786 1797])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1798 1808])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1809 1819])
+                    ("NoIter" variable (:type "int") (reparse-symbol arg-sub-list) [1820 1831])
+                    ("Dummy" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1844 1866])
+                    ("Omega" variable (:type "double") (reparse-symbol arg-sub-list) [1867 1880]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [1769 1881])
+            ("ChebyshevIter" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1935 1946])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1947 1957])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1958 1968])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [1969 1981])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1994 2022])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [2023 2043]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [1913 2044])
+            ("CGIter" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2091 2102])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2103 2113])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2114 2124])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [2125 2137])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2151 2179])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [2180 2200]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [2076 2201])
+            ("CGNIter" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2218 2229])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2230 2240])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2241 2251])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [2252 2264])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2278 2306])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [2307 2327]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [2202 2328])
+            ("GMRESIter" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2347 2358])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2359 2369])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2370 2380])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [2381 2393])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2407 2435])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [2436 2456]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [2329 2457])
+            ("BiCGIter" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2475 2486])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2487 2497])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2498 2508])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [2509 2521])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2534 2562])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [2563 2583]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [2458 2584])
+            ("QMRIter" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2601 2612])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2613 2623])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2624 2634])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [2635 2647])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2660 2688])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [2689 2709]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [2585 2710])
+            ("CGSIter" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2727 2738])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2739 2749])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2750 2760])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [2761 2773])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2786 2814])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [2815 2835]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [2711 2836])
+            ("BiCGSTABIter" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2858 2869])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2870 2880])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2881 2891])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [2892 2904])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2917 2945])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [2946 2966]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [2837 2967])
+            ("SetGMRESRestart" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("MaxSteps" variable (:type "int") (reparse-symbol arg-sub-list) [2989 3002]))                  
+                :type "void")
+                nil [2968 3003]))          
+      :file "itersolv.h"
+      :pointmax 3029
+      :fsize 3028
+      :lastmodtime '(12150 43932 0 0)
+      :unmatched-syntax '((TYPEDEF 1294 . 1301))
+      :lexical-table 
+        '(("ITERSOLV_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stddef.h" include (:system-flag t) nil [1108 1127])
+            ("math.h" include (:system-flag t) nil [1128 1145])
+            ("laspack/itersolv.h" include nil nil [1147 1176])
+            ("laspack/elcmp.h" include nil nil [1177 1203])
+            ("laspack/errhandl.h" include nil nil [1204 1233])
+            ("laspack/operats.h" include nil nil [1234 1262])
+            ("laspack/rtc.h" include nil nil [1263 1287])
+            ("laspack/copyrght.h" include nil nil [1288 1317])
+            ("GMRESSteps" variable
+               (:typemodifiers ("static")
+                :default-value "10"
+                :type "int")
+                nil [1362 1389])
+            ("JacobiIter" function
+               (:pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1410 1421])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1422 1432])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1433 1443])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [1444 1456])
+                    ("Dummy" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1469 1491])
+                    ("Omega" variable (:type "double") (reparse-symbol arg-sub-list) [1492 1505]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [1391 2533])
+            ("SORForwIter" function
+               (:pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2555 2566])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2567 2577])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2578 2588])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [2589 2601])
+                    ("Dummy" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2614 2636])
+                    ("Omega" variable (:type "double") (reparse-symbol arg-sub-list) [2637 2650]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [2535 3709])
+            ("SORBackwIter" function
+               (:pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3732 3743])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3744 3754])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3755 3765])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [3766 3778])
+                    ("Dummy" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3791 3813])
+                    ("Omega" variable (:type "double") (reparse-symbol arg-sub-list) [3814 3827]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [3711 4887])
+            ("SSORIter" function
+               (:pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4906 4917])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4918 4928])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4929 4939])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [4940 4952])
+                    ("Dummy" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4965 4987])
+                    ("Omega" variable (:type "double") (reparse-symbol arg-sub-list) [4988 5001]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [4889 6318])
+            ("ChebyshevIter" function
+               (:pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6342 6353])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6354 6364])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6365 6375])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [6376 6388])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6401 6429])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [6430 6450]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [6320 10202])
+            ("CGIter" function
+               (:pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10219 10230])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10231 10241])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10242 10252])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [10253 10265])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10278 10306])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [10307 10327]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [10204 13229])
+            ("CGNIter" function
+               (:pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13247 13258])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13259 13269])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13270 13280])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [13281 13293])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13306 13334])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [13335 13355]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [13231 16368])
+            ("GMRESIter" function
+               (:pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16388 16399])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16400 16410])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16411 16421])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [16422 16434])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16447 16475])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [16476 16496]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [16370 21428])
+            ("BiCGIter" function
+               (:pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21447 21458])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21459 21469])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21470 21480])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [21481 21493])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21506 21534])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [21535 21555]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [21430 25609])
+            ("QMRIter" function
+               (:pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25627 25638])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25639 25649])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25650 25660])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [25661 25673])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25686 25714])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [25715 25735]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [25611 34380])
+            ("CGSIter" function
+               (:pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34398 34409])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34410 34420])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34421 34431])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [34432 34444])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34457 34485])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [34486 34506]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [34382 38722])
+            ("BiCGSTABIter" function
+               (:pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38745 38756])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38757 38767])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38768 38778])
+                    ("MaxIter" variable (:type "int") (reparse-symbol arg-sub-list) [38779 38791])
+                    ("PrecondProc" variable (:type ("PrecondProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38804 38832])
+                    ("OmegaPrecond" variable (:type "double") (reparse-symbol arg-sub-list) [38833 38853]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [38724 43296])
+            ("SetGMRESRestart" function
+               (:arguments 
+                  ( ("Steps" variable (:type "int") (reparse-symbol arg-sub-list) [43319 43329]))                  
+                :type "void")
+                nil [43298 43357]))          
+      :file "itersolv.c"
+      :pointmax 43358
+      :fsize 43357
+      :lastmodtime '(12163 47720 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stddef.h" include (:system-flag t) nil [1108 1127])
+            ("laspack/rtc.h" include nil nil [1129 1153])
+            ("laspack/errhandl.h" include nil nil [1154 1183])
+            ("laspack/elcmp.h" include nil nil [1184 1210])
+            ("laspack/operats.h" include nil nil [1211 1239])
+            ("laspack/copyrght.h" include nil nil [1240 1269])
+            ("RTCEps" variable
+               (:typemodifiers ("static")
+                :default-value "1e-8"
+                :type "double")
+                nil [1319 1347])
+            ("RTCAuxProc" variable
+               (:typemodifiers ("static")
+                :default-value "NULL"
+                :type ("RTCAuxProcType" type (:type "class") nil nil))
+                nil [1423 1463])
+            ("LastNoIter" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [1541 1567])
+            ("LastAcc" variable
+               (:typemodifiers ("static")
+                :default-value "0.0"
+                :type "double")
+                nil [1631 1659])
+            ("SetRTCAccuracy" function
+               (:arguments 
+                  ( ("Eps" variable (:type "double") (reparse-symbol arg-sub-list) [1681 1692]))                  
+                :type "void")
+                nil [1661 1745])
+            ("SetRTCAuxProc" function
+               (:arguments 
+                  ( ("AuxProc" variable (:type ("RTCAuxProcType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1766 1789]))                  
+                :type "void")
+                nil [1747 1856])
+            ("RTCResult" function
+               (:arguments 
+                  ( ("Iter" variable (:type "int") (reparse-symbol arg-sub-list) [1876 1885])
+                    ("rNorm" variable (:type "double") (reparse-symbol arg-sub-list) [1886 1899])
+                    ("bNorm" variable (:type "double") (reparse-symbol arg-sub-list) [1900 1913])
+                    ("IterId" variable (:type ("IterIdType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1914 1932]))                  
+                :type ("Boolean" type (:type "class") nil nil))
+                nil [1858 2442])
+            ("GetLastNoIter" function (:type "int") nil [2444 2571])
+            ("GetLastAccuracy" function (:type "double") nil [2573 2688]))          
+      :file "rtc.c"
+      :pointmax 2689
+      :fsize 2688
+      :lastmodtime '(12254 43258 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("PRECOND_H" variable (:constant-flag t) nil [1134 1143])
+            ("laspack/lastypes.h" include nil nil [1145 1174])
+            ("laspack/vector.h" include nil nil [1175 1202])
+            ("laspack/qmatrix.h" include nil nil [1203 1231])
+            ("laspack/copyrght.h" include nil nil [1232 1261])
+            ("PrecondProcType" function
+               (:prototype-flag t
+                :pointer 1
+                :function-pointer t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1298 1308])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1309 1318])
+                    ("" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1319 1328])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [1329 1336]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [1271 1337])
+            ("JacobiPrecond" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1399 1410])
+                    ("y" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1411 1421])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1422 1432])
+                    ("Omega" variable (:type "double") (reparse-symbol arg-sub-list) [1433 1446]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [1377 1447])
+            ("SSORPrecond" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1468 1479])
+                    ("y" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1480 1490])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1491 1501])
+                    ("Omega" variable (:type "double") (reparse-symbol arg-sub-list) [1502 1515]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [1448 1516])
+            ("ILUPrecond" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("A" variable
+                       (:pointer 1
+                        :type ("QMatrix" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1536 1547])
+                    ("y" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1548 1558])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("Vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1559 1569])
+                    ("Omega" variable (:type "double") (reparse-symbol arg-sub-list) [1570 1583]))                  
+                :type ("Vector" type (:type "class") nil nil))
+                nil [1517 1584]))          
+      :file "precond.h"
+      :pointmax 1609
+      :fsize 1608
+      :lastmodtime '(12150 43934 0 0)
+      :unmatched-syntax '((TYPEDEF 1263 . 1270))
+      :lexical-table 
+        '(("PRECOND_H")
+          )
+))
+  :file "!home!liu!Downloads!laspack!laspack!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

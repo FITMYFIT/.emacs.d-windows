@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: loop Region._PtPairList
+# key: lpair
+# --
+for(unsigned int i=0;i!=Region._PtPairList.size();++i)
+{
+  PtiPtr=(CSPHPt *)Region._PtPairList[i]._PtiPtr;
+  PtjPtr=(CSPHPt *)Region._PtPairList[i]._PtjPtr;
+
+  KnlPtr=&Region._KnlList[i];
+
+  $0
+}
