@@ -21,6 +21,8 @@
 
 
 ;;; [ AUCTeX ] -- Integrated environment for *TeX*.
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/texlive/2019/bin/x86_64-linux/"))  
+(setq exec-path (append exec-path '("/usr/local/texlive/2019/bin/x86_64-linux/")))
 
 (use-package auctex
   :ensure t

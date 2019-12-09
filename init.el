@@ -103,7 +103,6 @@
 (require 'init-prog-sidebar)
 (require 'init-prog-document)
 (require 'init-prog-compile)
-(require 'init-prog-lang-tex)
 
 (unless (boundp 'build-system-prefix)
   (define-prefix-command 'build-system-prefix))
@@ -131,9 +130,10 @@
 ;;; Programming Languages
 (require 'init-prog-lang-C-common)
 
+(require 'init-prog-lang-tex)
 
 ;;latex 2019.12.6 Ricard
-(require 'init-latex)
+;;(require 'init-latex)
 
 ;;; Programming Tools
 
