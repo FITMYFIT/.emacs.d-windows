@@ -218,6 +218,10 @@ character(s), in which case it deletes the space(s) first."
   (setq preview-orientation 'right)
   (latex-preview-pane-enable))
 
+
+;;(pdf-tools-install)
+(pdf-loader-install)
+
 ;;; [ px ] -- Provides functions to preview LaTeX codes like $x^2$ in any buffer/mode.
 
 ;; (use-package px
