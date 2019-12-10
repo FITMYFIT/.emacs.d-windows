@@ -1,1 +1,1 @@
-("~/Documents/ElegantPaper/" "~/.emacs.d/" "~/basilisk/" "~/basilisk/src/")
+("~/.emacs.d/" "~/basilisk/" "~/basilisk/src/")

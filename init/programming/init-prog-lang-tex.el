@@ -9,30 +9,41 @@
 
 ;;; [ TeX-mode ]
 
-;;; Use `xetex' engine for better TeX compilation for Chinese.
-;; `TeX-engine-alist', `TeX-engine-in-engine-alist'
-(setq-default TeX-engine 'xetex)
-(with-eval-after-load 'tex-mode
-  ;; "latexmk -shell-escape -bibtex -xelatex -g -f %f"
-  (add-to-list 'tex-compile-commands '("xelatex %f" t "%r.pdf")))
-(setq-default LaTeX-command  "latex -shell-escape")
-
 ;;; [ LaTeX-mode ]
 
-
 ;;; [ AUCTeX ] -- Integrated environment for *TeX*.
-(setenv "PATH" (concat (getenv "PATH") ":/usr/local/texlive/2019/bin/x86_64-linux/"))  
-(setq exec-path (append exec-path '("/usr/local/texlive/2019/bin/x86_64-linux/")))
 
 (use-package auctex
   :ensure t
   :no-require t
   :commands (TeX-latex-mode)
   :config
+  (setq TeX-auto-save t)
+  (setq TeX-parse-self t)
+  (setq-default TeX-master nil)
+
+  (setq-default LaTeX-command  "latex -shell-escape --synctex=1")
+
+  ;; Use `xetex' engine for better TeX compilation for Chinese.
+  ;; `TeX-engine-alist', `TeX-engine-in-engine-alist'
+  (setq-default TeX-engine 'xetex)
+  (with-eval-after-load 'tex-mode
+    ;; "latexmk -shell-escape -bibtex -xelatex -g -f %f"
+    (add-to-list 'tex-compile-commands '("xelatex %f" t "%r.pdf"))
+    (add-to-list 'TeX-command-list '("XeLaTeX" "%`xelatex --synctex=1%(mode)%' %t" TeX-run-TeX nil t))
+    (setq TeX-command "xelatex"))
+
+  (setq TeX-show-compilation t)
+
+  ;; [ SyncTeX ] -- Sync (forward and inverse search) PDF with TeX/LaTeX.
+  (setq TeX-source-correlate-mode t)
+  (setq TeX-source-correlate-method '((dvi . source-specials) (pdf . synctex))) ; default
+  (setq TeX-source-correlate-start-server t)
+
   ;; macros
   (defun latex-font-lock-add-macros ()
     (font-latex-add-keywords '(("citep" "*[[{")) 'reference)
-	  (font-latex-add-keywords '(("citet" "*[[{")) 'reference))
+    (font-latex-add-keywords '(("citet" "*[[{")) 'reference))
   (add-hook 'LaTeX-mode-hook #'latex-font-lock-add-macros)
 
   ;; [ Preview ] -- [C-c C-p C-p]
@@ -56,8 +67,6 @@
   (TeX-source-correlate-mode t)
   ;; update PDF buffers after successful LaTeX runs.
   (add-hook 'TeX-after-TeX-LaTeX-command-finished-hook #'TeX-revert-document-buffer)
-
-  ;; (setq TeX-source-correlate-method)
 
   ;; auto close dollars
   (setq TeX-electric-math (cons "$" "$"))
@@ -166,17 +175,6 @@ character(s), in which case it deletes the space(s) first."
   (add-hook 'latex-mode-hook 'turn-on-reftex) ; with Emacs latex mode
   (add-hook 'LaTeX-mode-hook 'turn-on-reftex) ; with AUCTeX LaTeX mode
   (add-hook 'LaTeX-mode-hook #'reftex-mode))
-
-
-;;; [ SyncTeX ] -- navigate from the source document to the typeset material and vice versa.
-
-;; (defun my/SyncTeX-setup ()
-;;   (setq TeX-PDF-mode t)
-;;   (setq TeX-source-correlate-method 'synctex)
-;;   (setq TeX-source-correlate-start-server t))
-
-;; (add-hook 'LaTeX-mode-hook #'my/SyncTeX-setup)
-
 
 ;;; [ CDLaTeX ] -- Fast input methods for LaTeX environments and math.
 
