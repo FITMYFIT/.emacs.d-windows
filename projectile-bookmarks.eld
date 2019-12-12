@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/basilisk/" "~/basilisk/src/")
+("~/.emacs.d/" "~/SPHEHD-doc/")

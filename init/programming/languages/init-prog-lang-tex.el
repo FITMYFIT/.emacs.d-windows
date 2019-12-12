@@ -56,8 +56,8 @@
   (unless (assoc "PDF Tools" TeX-view-program-list-builtin)
     (add-to-list 'TeX-view-program-list-builtin '("PDF Tools" TeX-pdf-tools-sync-view)))
   (unless (equalp "PDF Tools" (car (cdr (assoc 'output-pdf TeX-view-program-selection))))
-    ;; (add-to-list 'TeX-view-program-selection '(output-pdf "mupdf"))
     (add-to-list 'TeX-view-program-selection '(output-pdf "PDF Tools")))
+  (add-hook 'pdf-view-mode-hook #'auto-revert-mode)
   
   ;; (setq-default TeX-PDF-mode t) ; enable by default since AUCTeX 11.88
   ;; [C-c C-g] switch between LaTeX source code and PDF positions.

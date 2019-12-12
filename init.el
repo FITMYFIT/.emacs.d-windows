@@ -130,8 +130,13 @@
 ;;; Programming Languages
 (require 'init-prog-lang-C-common)
 
-(require 'init-prog-lang-tex)
+;;(require 'init-emacs-pdf)
+;;(pdf-tools-install)
+(pdf-loader-install)
+;;(eval-after-load 'org '(require 'org-pdfview))
 
+;;(add-to-list 'org-file-apps '("\\.pdf\\'" . (lambda (file link) (org-pdfview-open link))))
+(require 'init-prog-lang-tex)
 ;;latex 2019.12.6 Ricard
 ;;(require 'init-latex)
 
@@ -169,9 +174,9 @@
 
 (add-to-list 'auto-mode-alist '("\\.dat\\'" . org-mode))
 (add-to-list 'auto-mode-alist '("\\.plt\\'" . gnuplot-mode));;set org-mode of .dat files 20191030
-(require 'linum)
-(global-linum-mode t);;show line number
-(global-auto-revert-mode t);;reload files if corrected
+;; (require 'linum)
+;; (global-linum-mode t);;show line number
+;; (global-auto-revert-mode t);;reload files if corrected
 
 (add-hook 'LaTeX-mode-hook 'turn-on-cdlatex)
 
