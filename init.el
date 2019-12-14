@@ -130,7 +130,6 @@
 ;;; Programming Languages
 (require 'init-prog-lang-C-common)
 
-;;(require 'init-emacs-pdf)
 ;;(pdf-tools-install)
 (pdf-loader-install)
 ;;(eval-after-load 'org '(require 'org-pdfview))
@@ -178,7 +177,7 @@
 ;; (global-linum-mode t);;show line number
 ;; (global-auto-revert-mode t);;reload files if corrected
 
-(add-hook 'LaTeX-mode-hook 'turn-on-cdlatex)
+;;(add-hook 'LaTeX-mode-hook 'turn-on-cdlatex)
 
 ;;rewrite the selection
 (delete-selection-mode t)
@@ -202,6 +201,21 @@
 (load-theme 'monokai t)
 
 
+;;定位到我想要的文件件目录 for windows
+(defconst my-projects-pathd "d:/")
+(defun god ()
+  (interactive)
+  (dired my-projects-pathd))
+
+(defun goe ()
+  (interactive)
+  (dired my-projects-pathe)) 
+(defconst my-projects-pathe "e:/")
+
+(defun gof ()
+  (interactive)
+  (dired my-projects-pathf)) 
+(defconst my-projects-pathf "f:/")
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;; init.el ends here

@@ -8,6 +8,7 @@
 ;;; Code:
 
 ;;; [ AUCTeX ] -- Integrated environment for *TeX*.
+(setenv "PATH" (concat "C:\\MinGW-w64-5.3.0\\mingw64\\bin;" (getenv "PATH")))
 
 (use-package auctex ; TeX-mode, LaTeX-mode
   :ensure t
@@ -16,7 +17,7 @@
   :config
   (setq TeX-auto-save t)
   (setq TeX-parse-self t)
-  (setq-default TeX-master nil)
+  (setq-default TeX-master nil) ;;ask if set the current file as master file
 
   (setq-default LaTeX-command  "latex -shell-escape --synctex=1")
 
@@ -43,10 +44,10 @@
   (add-hook 'LaTeX-mode-hook #'latex-font-lock-add-macros)
 
   ;; [ Preview ] -- [C-c C-p C-p]
-  ;; (setq preview-transparent-color '(highlight :background)
-  ;;       preview-auto-reveal
-  ;;       preview-auto-cache-preamble 'ask
-  ;;       )
+  ; ; (setq preview-transparent-color '(highlight :background)
+        ; ; preview-auto-reveal
+        ; ; preview-auto-cache-preamble 'ask
+        ; ; )
 
   ;; increase TeX/LaTeX preview scale size.
   (setq preview-scale-function 1.7)
@@ -99,6 +100,7 @@ character(s), in which case it deletes the space(s) first."
     (outline-hide-body) ; outline only show section headers at opening file.
     ;; electric
     (electric-pair-local-mode) ; enable auto insert pair for $.
+	 (turn-on-cdlatex) ;; 加载cdlatex
     (rainbow-delimiters-mode)
     (if (featurep 'smartparens)
         (smartparens-mode))
@@ -163,15 +165,17 @@ character(s), in which case it deletes the space(s) first."
 
 ;;; [ CDLaTeX ] -- Fast input methods for LaTeX environments and math.
 
-;; (use-package cdlatex
-;;   :ensure t
-;;   :defer t
-;;   :init
-;;   (add-hook 'LaTeX-mode-hook #'cdlatex-mode)
-;;   ;; enable in Org-mode
-;;   (add-hook 'org-mode-hook #'org-cdlatex-mode)
-;;   (add-to-list 'display-buffer-alist
-;;                '("^\\*CDLaTeX Help\\*" (display-buffer-below-selected))))
+(use-package cdlatex
+  :ensure t
+  :defer t
+  :init
+  (add-hook 'LaTeX-mode-hook #'cdlatex-mode)
+  ;; enable in Org-mode
+  (add-hook 'org-mode-hook #'org-cdlatex-mode)
+  (add-to-list 'display-buffer-alist
+               '("^\\*CDLaTeX Help\\*" (display-buffer-below-selected))))
+;;(add-hook 'LaTeX-mode-hook 'turn-on-cdlatex)   ; with AUCTeX LaTeX mode
+;;(add-hook 'latex-mode-hook 'turn-on-cdlatex)   ; with Emacs latex mode
 
 ;;; [ magic-latex-buffer ] -- magical syntax highlighting for LaTeX-mode buffers.
 

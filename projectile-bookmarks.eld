@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/SPHEHD-doc/")
+("e:/Paper Concerned/ElegantBook/" "e:/Paper Concerned/ElegantNote/" "e:/Paper Concerned/ElegantPaper/" "~/.emacs.d/")
