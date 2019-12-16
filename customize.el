@@ -75,6 +75,12 @@
      ("Other" "" TeX-run-command t t :help "Run an arbitrary command"))))
  '(ansi-color-names-vector
    ["black" "#d55e00" "#009e73" "#f8ec59" "#0072b2" "#cc79a7" "#56b4e9" "white"])
+ '(cdlatex-command-alist
+   (quote
+    (("big(" "insert \\big( \\big)" "\\big( ? \\big)" cdlatex-position-cursor nil nil t)
+     ("te" "" "\\text{ ? }" cdlatex-position-cursor nil nil t))))
+ '(cdlatex-math-symbol-alist (quote ((48 ("\\varnothing" "\\emptyset")))))
+ '(cdlatex-paired-parens "$[{(")
  '(company-quickhelp-color-background "#D0D0D0")
  '(company-quickhelp-color-foreground "#494B53")
  '(custom-enabled-themes (quote (deeper-blue)))
