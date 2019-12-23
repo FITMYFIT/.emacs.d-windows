@@ -134,12 +134,18 @@
 (pdf-loader-install)
 ;;(eval-after-load 'org '(require 'org-pdfview))
 
+(require 'init-org)
+
+;;(add-to-list 'exec-path "C:/msys64/mingw64/bin/")
+;;(setq ispell-program-name "hunspell")
+
+(custom-set-variables
+ ;;'(ispell-dictionary "british")
+ '(ispell-program-name "C:/msys64/mingw64/bin/hunspell.exe"))
 ;;(add-to-list 'org-file-apps '("\\.pdf\\'" . (lambda (file link) (org-pdfview-open link))))
 (require 'init-prog-lang-tex)
-;;latex 2019.12.6 Ricard
-;;(require 'init-latex)
-
-;;; Programming Tools
+
+
 
 (unless (boundp 'prog-tools-prefix)
   (define-prefix-command 'prog-tools-prefix))

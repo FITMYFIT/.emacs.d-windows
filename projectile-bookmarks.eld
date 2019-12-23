@@ -1,1 +1,1 @@
-("e:/Paper Concerned/SPHEHD-Harbin-LIUHu/" "~/.emacs.d/" "e:/Paper Concerned/BUAAThesis/" "e:/Paper Concerned/latex-beamer-beihang/" "e:/Paper Concerned/awesome-beamers/" "e:/Paper Concerned/ElegantBook/" "e:/Paper Concerned/ElegantNote/" "e:/Paper Concerned/ElegantPaper/")
+("~/.emacs.d/")
