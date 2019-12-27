@@ -186,15 +186,15 @@ wget -c "http://ben.akrin.com/crackzor/crackzor_1.0.c.gz"
 
 *** Add ~:session~ support of ob-js for js-comint
 #+begin_src js :session "*Javascript REPL*"
-console.log("stardiviner")
+console.log("RichardLIU")
 #+end_src
 *** Add ~:session~ support of ob-js for Indium
 #+begin_src js :session "*JS REPL*"
-console.log("stardiviner")
+console.log("RichardLIU")
 #+end_src
 *** Add ~:session~ support of ob-js for skewer-mode
 #+begin_src js :session "*skewer-repl*"
-console.log("stardiviner")
+console.log("RichardLIU")
 #+end_src
 *** Add support for links to LaTeX equations in HTML export
 Use MathJax links when enabled (by ~org-html-with-latex~), otherwise

@@ -48,7 +48,7 @@
 ;;; [ edebug-inline-result ] -- Show Edebug result inline.
 
 (leaf edebug-inline-result
-  :el-get (edebug-inline-result :url "https://github.com/stardiviner/edebug-inline-result.git")
+  :el-get (edebug-inline-result :url "https://github.com/RichardLIU/edebug-inline-result.git")
   :commands (edebug-inline-result-show))
 
 ;;; [ bug-hunter ] -- Hunt down errors in elisp files.

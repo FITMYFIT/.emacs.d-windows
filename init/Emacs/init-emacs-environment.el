@@ -6,9 +6,9 @@
 
 ;;; [ User Information ]
 
-(setq user-full-name "stardiviner")
+(setq user-full-name "RichardLIU")
 (setq user-mail-address "numbchild@gmail.com")
-;; (setq user-login-name "stardiviner")
+;; (setq user-login-name "RichardLIU")
 
 
 ;;; $PATH

@@ -1,1 +1,1 @@
-("~/.emacs.d/")
+("e:/sph2-ehd-0.7/" "~/.emacs.d/" "e:/LatexConcerned/ElegantPaper/" "e:/LatexConcerned/SPHEHD-Harbin-LIUHu/")

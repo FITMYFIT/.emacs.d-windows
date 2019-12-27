@@ -21,11 +21,11 @@
     (quietly-read-abbrev-file))
 
 (define-abbrev-table 'global-abbrev-table
-  '(("mynick" "stardiviner")
+  '(("mynick" "RichardLIU")
     ("myemail" "numbchild@gmail.com")
     ("mygmail" "numbchild@gmail.com")
     ("mygmailformat" "numbchild[@]{gmail}.com")
-    ("myhomepage" "http://stardiviner.github.io")
+    ("myhomepage" "http://RichardLIU.github.io")
     ("mytwitter" "@numbchild")
     ("myqq" "348284894")))
 

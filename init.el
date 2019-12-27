@@ -153,13 +153,13 @@
 
 
 
-;; (defun stardiviner-splash-animation ()
+;; (defun RichardLIU-splash-animation ()
 ;;   "Show ASCII animation."
 ;;   (animate-sequence '("Fuck this shit world!"
-;;                       "Author: stardiviner"
+;;                       "Author: RichardLIU"
 ;;                       "Date: 2011/10/0 (yes, day 0!)") 0)
 ;;   (kill-buffer "*Animation*"))
-;; (add-hook 'after-init-hook #'stardiviner-splash-animation)
+;; (add-hook 'after-init-hook #'RichardLIU-splash-animation)
 
 ;;; [ playground ] -- Manage sandboxes for alternative Emacs configurations.
 
