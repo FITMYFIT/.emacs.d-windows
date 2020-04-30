@@ -1,0 +1,228 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__BioFVM_utilities_h__" variable (:constant-flag t) nil [3557 3579])
+            ("iostream" include (:system-flag t) nil [3581 3600])
+            ("ctime" include (:system-flag t) nil [3601 3617])
+            ("cmath" include (:system-flag t) nil [3618 3634])
+            ("string" include (:system-flag t) nil [3635 3652])
+            ("chrono" include (:system-flag t) nil [3653 3670])
+            ("random" include (:system-flag t) nil [3671 3688])
+            ("BioFVM" type
+               (:members 
+                  ( ("TIC" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3718 3723]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3709 3724])
+                    ("TOC" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3734 3739]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3725 3740])
+                    ("RUNTIME_TIC" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3758 3763]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3741 3764])
+                    ("RUNTIME_TOC" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3782 3787]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3765 3788])
+                    ("stopwatch_value" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3813 3818]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [3790 3819])
+                    ("runtime_stopwatch_value" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3851 3856]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [3820 3857])
+                    ("total_stopwatch_time" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4063 4069]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [4034 4070])
+                    ("display_stopwatch_value" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("os" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4102 4120])
+                            ("dIn" variable (:type "double") (reparse-symbol arg-sub-list) [4121 4133]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4072 4134])
+                    ("format_stopwatch_value" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dIn" variable (:type "double") (reparse-symbol arg-sub-list) [4171 4182]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4135 4183])
+                    ("seed_random" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4203 4217]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4185 4218])
+                    ("seed_random" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4238 4244]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4220 4245])
+                    ("uniform_random" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4270 4276]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [4247 4277])
+                    ("compute_mean" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("values" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4300 4329]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [4279 4330])
+                    ("compute_variance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("values" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4356 4384])
+                            ("mean" variable (:type "double") (reparse-symbol arg-sub-list) [4385 4398]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [4331 4399])
+                    ("compute_variance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("values" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4426 4455]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [4401 4456]))                  
+                :type "namespace")
+                nil [3690 4461]))          
+      :file "BioFVM_utilities.h"
+      :pointmax 4473
+      :fsize 4558
+      :lastmodtime '(22934 43858 0 0)
+      :unmatched-syntax '((punctuation 4461 . 4462))
+      :lexical-table 
+        '(("__BioFVM_utilities_h__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "BioFVM_vector.h"
+      :fsize 8049
+      :lastmodtime '(22934 43840 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "BioFVM_mesh.h"
+      :fsize 9037
+      :lastmodtime '(22934 44548 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "BioFVM_microenvironment.h"
+      :fsize 14777
+      :lastmodtime '(22936 2760 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "BioFVM_solvers.h"
+      :fsize 4839
+      :lastmodtime '(22934 43870 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "BioFVM_basic_agent.h"
+      :fsize 6023
+      :lastmodtime '(22934 44540 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BioFVM_solvers.h" include nil nil [3518 3545])
+            ("BioFVM_vector.h" include nil nil [3547 3573])
+            ("iostream" include (:system-flag t) nil [3576 3595])
+            ("omp.h" include (:system-flag t) nil [3596 3612])
+            ("BioFVM" type
+               (:members 
+                  ( ("diffusion_decay_solver__constant_coefficients_explicit" function
+                       (:arguments 
+                          ( ("M" variable
+                               (:reference 1
+                                :type ("Microenvironment" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3719 3739])
+                            ("dt" variable (:type "double") (reparse-symbol arg-sub-list) [3740 3751]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3658 4387])
+                    ("diffusion_decay_solver__constant_coefficients_explicit_uniform_mesh" function
+                       (:arguments 
+                          ( ("M" variable
+                               (:reference 1
+                                :type ("Microenvironment" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4463 4483])
+                            ("dt" variable (:type "double") (reparse-symbol arg-sub-list) [4484 4495]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4389 5002])
+                    ("diffusion_decay_solver__constant_coefficients_LOD_3D" function
+                       (:arguments 
+                          ( ("M" variable
+                               (:reference 1
+                                :type ("Microenvironment" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5063 5083])
+                            ("dt" variable (:type "double") (reparse-symbol arg-sub-list) [5084 5095]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5004 11891])
+                    ("diffusion_decay_solver__constant_coefficients_LOD_2D" function
+                       (:arguments 
+                          ( ("M" variable
+                               (:reference 1
+                                :type ("Microenvironment" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11952 11972])
+                            ("dt" variable (:type "double") (reparse-symbol arg-sub-list) [11973 11984]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11893 16913])
+                    ("diffusion_decay_explicit_uniform_rates" function
+                       (:arguments 
+                          ( ("M" variable
+                               (:reference 1
+                                :type ("Microenvironment" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16960 16980])
+                            ("dt" variable (:type "double") (reparse-symbol arg-sub-list) [16981 16992]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [16915 18880]))                  
+                :type "namespace")
+                nil [3614 18883]))          
+      :file "BioFVM_solvers.cpp"
+      :pointmax 18885
+      :fsize 19408
+      :lastmodtime '(22934 43874 0 0)
+      :unmatched-syntax '((punctuation 18883 . 18884))))
+  :file "!drive_e!迅雷下载!BioFVM_V.1.1.6!BioFVM!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

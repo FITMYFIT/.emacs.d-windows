@@ -136,37 +136,34 @@
 
 (require 'init-org)
 
-;;(add-to-list 'exec-path "C:/msys64/mingw64/bin/")
-;;(setq ispell-program-name "hunspell")
+(add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
+(setq ispell-program-name "aspell")
+(setq ispell-personal-dictionary "C:/Program Files (x86)/Aspell/dict/en_US.dic")
+(require 'flyspell)
 
-(custom-set-variables
- ;;'(ispell-dictionary "british")
- '(ispell-program-name "C:/msys64/mingw64/bin/hunspell.exe"))
-;;(add-to-list 'org-file-apps '("\\.pdf\\'" . (lambda (file link) (org-pdfview-open link))))
+;;(add-to-list 'exec-path "D:/Install/hunspell/src/tools/")
+;;(setq ispell-program-name (locate-file "hunspell"
+;;             exec-path exec-suffixes 'file-executable-p))
+;;(add-to-list 'ispell-local-dictionary-alist '("english-hunspell"
+;;                                              "[[:alpha:]]"
+;;                                              "[^[:alpha:]]"
+ ;;                                             "[']"
+;;                                              t
+;;                                              ("-d" "en_US")
+;;                                              nil
+;;                                              iso-8859-1))
+
+;;(setq ispell-program-name "hunspell"          ; Use hunspell to correct mistakes
+;;      ispell-dictionary   "deutsch-hunspell") ; Default dictionary to use		
+
 (require 'init-prog-lang-tex)
-
+(setq debug-on-error t)
 
 
 (unless (boundp 'prog-tools-prefix)
   (define-prefix-command 'prog-tools-prefix))
 (global-set-key (kbd "C-c t") 'prog-tools-prefix)
 
-
-
-;; (defun RichardLIU-splash-animation ()
-;;   "Show ASCII animation."
-;;   (animate-sequence '("Fuck this shit world!"
-;;                       "Author: RichardLIU"
-;;                       "Date: 2011/10/0 (yes, day 0!)") 0)
-;;   (kill-buffer "*Animation*"))
-;; (add-hook 'after-init-hook #'RichardLIU-splash-animation)
-
-;;; [ playground ] -- Manage sandboxes for alternative Emacs configurations.
-
-;; (use-package playground
-;;   :ensure t
-;;   :defer t
-;;   :commands (playground-checkout playground-checkout-with-options))
 
 ;; Use a hook so the message doesn't get clobbered by other messages.
 (add-hook 'emacs-startup-hook

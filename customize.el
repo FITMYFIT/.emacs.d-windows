@@ -89,6 +89,8 @@
     ("a2cde79e4cc8dc9a03e7d9a42fabf8928720d420034b66aecc5b665bbf05d4e9" "b73a23e836b3122637563ad37ae8c7533121c2ac2c8f7c87b381dd7322714cd0" "0dd2666921bd4c651c7f8a724b3416e95228a13fca1aa27dc0022f4e023bf197" default)))
  '(el-get-git-shallow-clone t)
  '(global-aggressive-indent-mode nil)
+ '(ispell-personal-dictionary "C:/Program Files (x86)/Aspell/dict/")
+ '(ispell-program-name "")
  '(package-archives
    (quote
     (("org" . "https://orgmode.org/elpa/")
@@ -96,7 +98,8 @@
      ("gnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/"))))
  '(package-selected-packages
    (quote
-    (org-download rainbow-delimiters pdfgrep pdf-tools-org org-noter pdf-view-restore latex-preview-pane magic-latex-buffer company-math company-reftex cdlatex helm-mt company-auctex auto-complete-auctex multi-term evil-magit gnuplot org-pdfview pdf-tools auctex org ws-butler sr-speedbar helm-cscope xcscope yasnippet-snippets smartparens flycheck-cstyle c-eldoc flycheck-irony irony-eldoc company-irony-c-headers company-irony irony modern-cpp-font-lock diffview git-gutter+ forge magit-org-todos magit-diff-flycheck git-messenger magit-gitflow magit git-commit gitignore-templates gitignore-mode gitattributes-mode gitconfig-mode projectile-variable realgud-lldb realgud flycheck-inline build-helper cmake-ide eldoc-cmake cmake-font-lock cmake-mode makefile-executor quickrun helm-dash dash-docs dired-sidebar code-archive org-sync-snippets auto-yasnippet ivy-yasnippet yasnippet company-quickhelp shut-up company auto-complete origami aggressive-indent indent-guide banner-comment org-commentary poporg hl-todo which-key visual-regexp-steroids use-package treepy symbol-overlay regex-tool pcre2el one-themes leaf-keywords kv key-quiz ivy-hydra ht hierarchy helm-swoop frog-jump-buffer flycheck-package emaps elgrep el-get doom-modeline delight deferred counsel anzu ample-regexps aggressive-fill-paragraph ace-window a)))
+    (helm-ispell ac-ispell esup ansi package-build epl git commander f dash s cask org-download rainbow-delimiters pdfgrep pdf-tools-org org-noter pdf-view-restore latex-preview-pane magic-latex-buffer company-math company-reftex cdlatex helm-mt company-auctex auto-complete-auctex multi-term evil-magit gnuplot org-pdfview pdf-tools auctex org ws-butler sr-speedbar helm-cscope xcscope yasnippet-snippets smartparens flycheck-cstyle c-eldoc flycheck-irony irony-eldoc company-irony-c-headers company-irony irony modern-cpp-font-lock diffview git-gutter+ forge magit-org-todos magit-diff-flycheck git-messenger magit-gitflow magit git-commit gitignore-templates gitignore-mode gitattributes-mode gitconfig-mode projectile-variable realgud-lldb realgud flycheck-inline build-helper cmake-ide eldoc-cmake cmake-font-lock cmake-mode makefile-executor quickrun helm-dash dash-docs dired-sidebar code-archive org-sync-snippets auto-yasnippet ivy-yasnippet yasnippet company-quickhelp shut-up company auto-complete origami aggressive-indent indent-guide banner-comment org-commentary poporg hl-todo which-key visual-regexp-steroids use-package treepy symbol-overlay regex-tool pcre2el one-themes leaf-keywords kv key-quiz ivy-hydra ht hierarchy helm-swoop frog-jump-buffer flycheck-package emaps elgrep el-get doom-modeline delight deferred counsel anzu ample-regexps aggressive-fill-paragraph ace-window a)))
+ '(pdf-misc-print-programm "lpr")
  '(safe-local-variable-values
    (quote
     ((company-clang-arguments "-I/home/liu/basilisk/src/" "-I/home/liu/basilisk/src/navier-stokes/" "-I/home/liu/basilisk/src/ehd/" "-I/home/liu/basilisk/src/grid/")

@@ -8,7 +8,7 @@
 ;;; Code:
 
 ;;; [ AUCTeX ] -- Integrated environment for *TeX*.
-(setenv "PATH" (concat "C:\\MinGW-w64-5.3.0\\mingw64\\bin;" (getenv "PATH")))
+(setenv "PATH" (concat "C:\\msys64\\mingw64\\bin;" (getenv "PATH")))
 
 (use-package auctex ; TeX-mode, LaTeX-mode
   :ensure t
@@ -33,10 +33,28 @@
   (setq TeX-show-compilation t)
 
   ;; [ SyncTeX ] -- Sync (forward and inverse search) PDF with TeX/LaTeX.
-  (setq TeX-source-correlate-mode t)
-  (setq TeX-source-correlate-method '((dvi . source-specials) (pdf . synctex))) ; default
-  (setq TeX-source-correlate-start-server t)
-
+  ;;(setq TeX-source-correlate-mode t)
+  ;;(setq TeX-source-correlate-method '((dvi . source-specials) (pdf . synctex))) ; default
+  ;;(setq TeX-source-correlate-start-server t)
+;; PDF正向搜索相关设置
+(setq TeX-PDF-mode t) 
+(setq TeX-source-correlate-mode t) 
+(setq TeX-source-correlate-method 'synctex) 
+(setq TeX-view-program-list 
+ '(("Sumatra PDF" ("\"C:/Program Files/SumatraPDF-3.1.2-64/SumatraPDF.exe\" -reuse-instance" (mode-io-correlate " -forward-search %b %n ") " %o")))) 
+;; 打开TeX文件时应该加载的mode/执行的命令
+(defun my-latex-hook ()
+  (turn-on-cdlatex) ;; 加载cdlatex
+  (outline-minor-mode) ;; 加载outline mode
+  (turn-on-reftex)  ;; 加载reftex
+  (auto-fill-mode)  ;; 加载自动换行
+  (flyspell-mode)   ;; 加载拼写检查 (需要安装aspell)
+  (TeX-fold-mode t) ;; 加载TeX fold mode
+  (outline-hide-body) ;; 打开文件时只显示章节标题
+  (assq-delete-all (quote output-pdf) TeX-view-program-selection)    ;; 以下两行是正向搜索相关设置
+  (add-to-list 'TeX-view-program-selection '(output-pdf "Sumatra PDF"))
+  )
+(add-hook 'LaTeX-mode-hook 'my-latex-hook)
   ;; macros
   (defun latex-font-lock-add-macros ()
     (font-latex-add-keywords '(("citep" "*[[{")) 'reference)
@@ -53,12 +71,12 @@
   ;;(setq preview-scale-function 1.2)
   
   ;; view generated PDF with `pdf-tools'. (this is built-in now.)
-  (require 'tex)
-  (unless (assoc "PDF Tools" TeX-view-program-list-builtin)
-    (add-to-list 'TeX-view-program-list-builtin '("PDF Tools" TeX-pdf-tools-sync-view)))
-  (unless (equalp "PDF Tools" (car (cdr (assoc 'output-pdf TeX-view-program-selection))))
-    (add-to-list 'TeX-view-program-selection '(output-pdf "PDF Tools")))
-  (add-hook 'pdf-view-mode-hook #'auto-revert-mode)
+ ;; (require 'tex)
+ ;; (unless (assoc "PDF Tools" TeX-view-program-list-builtin)
+;;    (add-to-list 'TeX-view-program-list-builtin '("PDF Tools" TeX-pdf-tools-sync-view)))
+  ;;(unless (equalp "PDF Tools" (car (cdr (assoc 'output-pdf TeX-view-program-selection))))
+  ;;  (add-to-list 'TeX-view-program-selection '(output-pdf "PDF Tools")))
+ ;; (add-hook 'pdf-view-mode-hook #'auto-revert-mode)
   
   ;; (setq-default TeX-PDF-mode t) ; enable by default since AUCTeX 11.88
   ;; [C-c C-g] switch between LaTeX source code and PDF positions.

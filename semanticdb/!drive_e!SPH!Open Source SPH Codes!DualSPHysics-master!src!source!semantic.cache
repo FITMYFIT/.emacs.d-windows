@@ -1,0 +1,708 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :file "JAppInfo.h"
+      :fsize 4086
+      :lastmodtime '(23727 11603 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "JLog2.h"
+      :fsize 5282
+      :lastmodtime '(23727 11603 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "JCfgRun.h"
+      :fsize 4347
+      :lastmodtime '(23727 11603 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "JException.h"
+      :fsize 2205
+      :lastmodtime '(23727 11603 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "JSphCpuSingle.h"
+      :fsize 4462
+      :lastmodtime '(23727 11603 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("JMotion.h" include nil nil [1074 1094])
+            ("JMotionMov.h" include nil nil [1095 1118])
+            ("JMotionObj.h" include nil nil [1119 1142])
+            ("JMotionEvent.h" include nil nil [1143 1168])
+            ("JMotionList.h" include nil nil [1169 1193])
+            ("Functions.h" include nil nil [1194 1216])
+            ("JXml.h" include nil nil [1217 1234])
+            ("algorithm" include (:system-flag t) nil [1235 1255])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1257 1277])
+            ("JMotion" function
+               (:constructor-flag t
+                :parent "JMotion"
+                :type ("JMotion" type (:type "class") nil nil))
+                nil [1631 1733])
+            ("JMotion" function
+               (:destructor-flag t
+                :parent "JMotion"
+                :type "void")
+                nil [1912 1970])
+            ("Reset" function
+               (:parent "JMotion"
+                :type "void")
+                nil [2166 2617])
+            ("SetDirData" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("dirdata" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2856 2883]))                  
+                :type "void")
+                nil [2831 2927])
+            ("ObjGetPointer" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "JMotion"
+                :arguments 
+                  ( ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3175 3187]))                  
+                :type ("JMotionObj" type (:type "class") nil nil))
+                nil [3140 3309])
+            ("ObjGetPointerByRef" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "JMotion"
+                :arguments 
+                  ( ("ref" variable (:type "int") (reparse-symbol arg-sub-list) [3570 3578]))                  
+                :type ("JMotionObj" type (:type "class") nil nil))
+                nil [3530 3706])
+            ("ExistsObj" function
+               (:methodconst-flag t
+                :parent "JMotion"
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("JMotionObj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3942 3958]))                  
+                :type "bool")
+                nil [3918 4071])
+            ("ObjAdd" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4523 4535])
+                    ("idparent" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4535 4553])
+                    ("ref" variable (:type "int") (reparse-symbol arg-sub-list) [4553 4561]))                  
+                :type "void")
+                nil [4502 5362])
+            ("EventAdd" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5691 5706])
+                    ("movid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5706 5721])
+                    ("timestart" variable (:type "double") (reparse-symbol arg-sub-list) [5721 5738])
+                    ("timefinish" variable (:type "double") (reparse-symbol arg-sub-list) [5738 5756]))                  
+                :type "void")
+                nil [5668 6322])
+            ("AxisAdd" function
+               (:pointer 1
+                :parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6586 6601])
+                    ("p1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6601 6620])
+                    ("p2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6620 6639]))                  
+                :type ("JMotionAxis" type (:type "class") nil nil))
+                nil [6556 7170])
+            ("MovAdd" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7384 7399])
+                    ("mov" variable
+                       (:pointer 1
+                        :type ("JMotionMov" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7399 7415]))                  
+                :type "void")
+                nil [7363 7885])
+            ("MovAddWait" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8103 8118])
+                    ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8118 8130])
+                    ("nextid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8130 8146])
+                    ("time" variable (:type "double") (reparse-symbol arg-sub-list) [8146 8158]))                  
+                :type "void")
+                nil [8078 8308])
+            ("MovAddTeleport" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8539 8554])
+                    ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8554 8566])
+                    ("nextid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8566 8582])
+                    ("mpos" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8582 8603]))                  
+                :type "void")
+                nil [8510 8661])
+            ("MovAddRectilinear" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8899 8914])
+                    ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8914 8926])
+                    ("nextid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8926 8942])
+                    ("time" variable (:type "double") (reparse-symbol arg-sub-list) [8942 8954])
+                    ("vel" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8954 8974]))                  
+                :type "void")
+                nil [8867 9033])
+            ("MovAddRectilinearAce" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9289 9304])
+                    ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9304 9316])
+                    ("nextid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9316 9332])
+                    ("time" variable (:type "double") (reparse-symbol arg-sub-list) [9332 9344])
+                    ("ace" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9344 9364])
+                    ("vel" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9364 9384])
+                    ("velpre" variable (:type "bool") (reparse-symbol arg-sub-list) [9384 9396]))                  
+                :type "void")
+                nil [9254 9469])
+            ("MovAddRotation" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9693 9708])
+                    ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9708 9720])
+                    ("nextid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9720 9736])
+                    ("time" variable (:type "double") (reparse-symbol arg-sub-list) [9736 9748])
+                    ("angdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [9748 9764])
+                    ("axisp1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9764 9787])
+                    ("axisp2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9787 9810])
+                    ("velang" variable (:type "double") (reparse-symbol arg-sub-list) [9810 9824])
+                    ("useangdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [9824 9843]))                  
+                :type "void")
+                nil [9664 9999])
+            ("MovAddRotationAce" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10250 10265])
+                    ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10265 10277])
+                    ("nextid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10277 10293])
+                    ("time" variable (:type "double") (reparse-symbol arg-sub-list) [10293 10305])
+                    ("angdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [10305 10321])
+                    ("axisp1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10321 10344])
+                    ("axisp2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10344 10367])
+                    ("aceang" variable (:type "double") (reparse-symbol arg-sub-list) [10367 10381])
+                    ("velang" variable (:type "double") (reparse-symbol arg-sub-list) [10381 10395])
+                    ("velpre" variable (:type "bool") (reparse-symbol arg-sub-list) [10395 10407])
+                    ("useangdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [10407 10426]))                  
+                :type "void")
+                nil [10218 10634])
+            ("MovAddCircular" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10871 10886])
+                    ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10886 10898])
+                    ("nextid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10898 10914])
+                    ("time" variable (:type "double") (reparse-symbol arg-sub-list) [10914 10926])
+                    ("angdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [10926 10942])
+                    ("axisp1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10942 10965])
+                    ("axisp2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10965 10988])
+                    ("ref" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10988 11008])
+                    ("velang" variable (:type "double") (reparse-symbol arg-sub-list) [11008 11022])
+                    ("useangdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [11022 11041]))                  
+                :type "void")
+                nil [10842 11220])
+            ("MovAddCircularAce" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11484 11499])
+                    ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11499 11511])
+                    ("nextid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11511 11527])
+                    ("time" variable (:type "double") (reparse-symbol arg-sub-list) [11527 11539])
+                    ("angdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [11539 11555])
+                    ("axisp1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11555 11578])
+                    ("axisp2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11578 11601])
+                    ("ref" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11601 11621])
+                    ("aceang" variable (:type "double") (reparse-symbol arg-sub-list) [11621 11635])
+                    ("velang" variable (:type "double") (reparse-symbol arg-sub-list) [11635 11649])
+                    ("velpre" variable (:type "bool") (reparse-symbol arg-sub-list) [11649 11661])
+                    ("useangdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [11661 11680]))                  
+                :type "void")
+                nil [11452 11911])
+            ("MovAddRecSinu" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12147 12162])
+                    ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12162 12174])
+                    ("nextid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12174 12190])
+                    ("time" variable (:type "double") (reparse-symbol arg-sub-list) [12190 12202])
+                    ("angdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [12202 12218])
+                    ("freq" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12218 12239])
+                    ("ampl" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12239 12260])
+                    ("phase" variable (:type ("tdouble3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12260 12275])
+                    ("phaseprev" variable (:type "bool") (reparse-symbol arg-sub-list) [12275 12290])
+                    ("useangdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [12290 12309]))                  
+                :type "void")
+                nil [12119 12492])
+            ("MovAddRotSinu" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12729 12744])
+                    ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12744 12756])
+                    ("nextid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12756 12772])
+                    ("time" variable (:type "double") (reparse-symbol arg-sub-list) [12772 12784])
+                    ("angdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [12784 12800])
+                    ("axisp1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12800 12823])
+                    ("axisp2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12823 12846])
+                    ("freq" variable (:type "double") (reparse-symbol arg-sub-list) [12846 12858])
+                    ("ampl" variable (:type "double") (reparse-symbol arg-sub-list) [12858 12870])
+                    ("phase" variable (:type "double") (reparse-symbol arg-sub-list) [12870 12883])
+                    ("phaseprev" variable (:type "bool") (reparse-symbol arg-sub-list) [12883 12898])
+                    ("useangdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [12898 12917]))                  
+                :type "void")
+                nil [12701 13169])
+            ("MovAddCirSinu" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13403 13418])
+                    ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13418 13430])
+                    ("nextid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13430 13446])
+                    ("time" variable (:type "double") (reparse-symbol arg-sub-list) [13446 13458])
+                    ("angdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [13458 13474])
+                    ("axisp1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13474 13497])
+                    ("axisp2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13497 13520])
+                    ("ref" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13520 13540])
+                    ("freq" variable (:type "double") (reparse-symbol arg-sub-list) [13540 13552])
+                    ("ampl" variable (:type "double") (reparse-symbol arg-sub-list) [13552 13564])
+                    ("phase" variable (:type "double") (reparse-symbol arg-sub-list) [13564 13577])
+                    ("phaseprev" variable (:type "bool") (reparse-symbol arg-sub-list) [13577 13592])
+                    ("useangdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [13592 13611]))                  
+                :type "void")
+                nil [13375 13886])
+            ("MovAddRectilinearFile" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14489 14504])
+                    ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14504 14516])
+                    ("nextid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14516 14532])
+                    ("time" variable (:type "double") (reparse-symbol arg-sub-list) [14532 14544])
+                    ("file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14544 14568])
+                    ("fields" variable (:type "int") (reparse-symbol arg-sub-list) [14568 14579])
+                    ("fieldtime" variable (:type "int") (reparse-symbol arg-sub-list) [14579 14593])
+                    ("fieldx" variable (:type "int") (reparse-symbol arg-sub-list) [14593 14604])
+                    ("fieldy" variable (:type "int") (reparse-symbol arg-sub-list) [14604 14615])
+                    ("fieldz" variable (:type "int") (reparse-symbol arg-sub-list) [14615 14626]))                  
+                :type "void")
+                nil [14453 15330])
+            ("MovAddRotationFile" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15594 15609])
+                    ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15609 15621])
+                    ("nextid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15621 15637])
+                    ("time" variable (:type "double") (reparse-symbol arg-sub-list) [15637 15649])
+                    ("angdegrees" variable (:type "bool") (reparse-symbol arg-sub-list) [15649 15668])
+                    ("axisp1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15668 15691])
+                    ("axisp2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15691 15714])
+                    ("file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15714 15738]))                  
+                :type "void")
+                nil [15561 15851])
+            ("MovAddNull" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("objid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16068 16083])
+                    ("id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16083 16095]))                  
+                :type "void")
+                nil [16043 16138])
+            ("CheckLinkMovs" function
+               (:methodconst-flag t
+                :parent "JMotion"
+                :type "void")
+                nil [16368 16464])
+            ("Prepare" function
+               (:parent "JMotion"
+                :type "void")
+                nil [16681 17413])
+            ("CreateMotList" function
+               (:parent "JMotion"
+                :type "void")
+                nil [17611 18304])
+            ("ProcesTimeSimple" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("timestep" variable (:type "double") (reparse-symbol arg-sub-list) [18705 18721])
+                    ("dt" variable (:type "double") (reparse-symbol arg-sub-list) [18721 18731]))                  
+                :type "bool")
+                nil [18674 19498])
+            ("ProcesTimeAce" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("timestep" variable (:type "double") (reparse-symbol arg-sub-list) [19923 19939])
+                    ("dt" variable (:type "double") (reparse-symbol arg-sub-list) [19939 19949]))                  
+                :type "bool")
+                nil [19895 21138])
+            ("ProcesTimeGetData" function
+               (:methodconst-flag t
+                :parent "JMotion"
+                :arguments 
+                  ( ("ref" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21494 21507])
+                    ("typesimple" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [21507 21524])
+                    ("simplemov" variable
+                       (:reference 1
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21524 21547])
+                    ("simplevel" variable
+                       (:reference 1
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21547 21567])
+                    ("simpleace" variable
+                       (:reference 1
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21567 21587])
+                    ("matmov" variable
+                       (:reference 1
+                        :type ("tmatrix4d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21587 21605])
+                    ("matmov2" variable
+                       (:reference 1
+                        :type ("tmatrix4d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21605 21624]))                  
+                :type "bool")
+                nil [21462 21722])
+            ("ProcesTimeGetData" function
+               (:methodconst-flag t
+                :parent "JMotion"
+                :arguments 
+                  ( ("ref" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22078 22091])
+                    ("typesimple" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [22091 22108])
+                    ("simplemov" variable
+                       (:reference 1
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22108 22128])
+                    ("matmov" variable
+                       (:reference 1
+                        :type ("tmatrix4d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22128 22146]))                  
+                :type "bool")
+                nil [22046 22216])
+            ("ResetTime" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("timestep" variable (:type "double") (reparse-symbol arg-sub-list) [22448 22464]))                  
+                :type "void")
+                nil [22424 22696])
+            ("ProcesTime" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("timestep" variable (:type "double") (reparse-symbol arg-sub-list) [22996 23012])
+                    ("dt" variable (:type "double") (reparse-symbol arg-sub-list) [23012 23022]))                  
+                :type "bool")
+                nil [22971 24083])
+            ("GetMov" function
+               (:methodconst-flag t
+                :parent "JMotion"
+                :arguments 
+                  ( ("pos" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24314 24327])
+                    ("ref" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [24327 24341])
+                    ("mvsimple" variable
+                       (:reference 1
+                        :type ("tdouble3" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24341 24360])
+                    ("mvmatrix" variable
+                       (:reference 1
+                        :type ("JMatrix4d" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24360 24380]))                  
+                :type "bool")
+                nil [24293 24525])
+            ("GetStopRef" function
+               (:methodconst-flag t
+                :parent "JMotion"
+                :arguments 
+                  ( ("pos" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24763 24776]))                  
+                :type "unsigned int")
+                nil [24734 24901])
+            ("GetMaxRef" function
+               (:methodconst-flag t
+                :parent "JMotion"
+                :type "int")
+                nil [25117 25276])
+            ("CopyConfig" function
+               (:methodconst-flag t
+                :parent "JMotion"
+                :arguments 
+                  ( ("mot" variable
+                       (:reference 1
+                        :type ("JMotion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25527 25540]))                  
+                :type "void")
+                nil [25502 25807])
+            ("CopyChangeRef" function
+               (:methodconst-flag t
+                :parent "JMotion"
+                :arguments 
+                  ( ("mot" variable
+                       (:reference 1
+                        :type ("JMotion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26192 26205])
+                    ("ref" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [26205 26220])
+                    ("refnew" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [26220 26238])
+                    ("refcount" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [26238 26256]))                  
+                :type "void")
+                nil [26164 26523])
+            ("Optimize" function
+               (:parent "JMotion"
+                :type "void")
+                nil [26765 27323])
+            ("WriteXml" function
+               (:methodconst-flag t
+                :parent "JMotion"
+                :arguments 
+                  ( ("jxml" variable
+                       (:pointer 1
+                        :type ("JXml" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27559 27570])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27570 27594]))                  
+                :type "void")
+                nil [27536 27753])
+            ("ReadXml" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("dirdata" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27987 28014])
+                    ("jxml" variable
+                       (:pointer 1
+                        :type ("JXml" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28014 28025])
+                    ("node" variable
+                       (:pointer 1
+                        :type ("TiXmlNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28025 28041])
+                    ("id" variable
+                       (:reference 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [28041 28054])
+                    ("idp" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28054 28067]))                  
+                :type "void")
+                nil [27965 35804])
+            ("ReadXml" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("dirdata" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36038 36065])
+                    ("jxml" variable
+                       (:pointer 1
+                        :type ("JXml" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36065 36076])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36076 36100])
+                    ("checkexists" variable (:type "bool") (reparse-symbol arg-sub-list) [36100 36117]))                  
+                :type "void")
+                nil [36016 36433])
+            ("LoadFileXml" function
+               (:parent "JMotion"
+                :arguments 
+                  ( ("dirdata" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36685 36712])
+                    ("file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36712 36736])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36736 36755]))                  
+                :type "void")
+                nil [36659 36825])
+            ("SaveFileXml" function
+               (:methodconst-flag t
+                :parent "JMotion"
+                :arguments 
+                  ( ("file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37077 37101])
+                    ("path" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37101 37125])
+                    ("newfile" variable (:type "bool") (reparse-symbol arg-sub-list) [37125 37138]))                  
+                :type "void")
+                nil [37051 37241]))          
+      :file "JMotion.cpp"
+      :pointmax 37243
+      :fsize 37242
+      :lastmodtime '(23727 11603 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "JMotion.h"
+      :fsize 8978
+      :lastmodtime '(23727 11603 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "JMotionMov.h"
+      :fsize 15578
+      :lastmodtime '(23727 11603 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "JMotionObj.h"
+      :fsize 4953
+      :lastmodtime '(23727 11603 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "JMotionEvent.h"
+      :fsize 1700
+      :lastmodtime '(23727 11603 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "JMotionList.h"
+      :fsize 4197
+      :lastmodtime '(23727 11603 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "Functions.h"
+      :fsize 16250
+      :lastmodtime '(23727 11603 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "JXml.h"
+      :fsize 49330
+      :lastmodtime '(23727 11603 0 0)))
+  :file "!drive_e!SPH!Open Source SPH Codes!DualSPHysics-master!src!source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
