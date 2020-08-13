@@ -136,25 +136,13 @@
 
 (require 'init-org)
 
-(add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
-(setq ispell-program-name "aspell")
-(setq ispell-personal-dictionary "C:/Program Files (x86)/Aspell/dict/en_US.dic")
+(add-to-list 'exec-path "C:/hunspell-1.3.2-3-w32-bin/bin/hunspell.exe")
+(setq ispell-program-name "hunspell")
+;; below two lines reset the the hunspell to it STOPS querying locale!
+(setq ispell-local-dictionary "en_US") ;; "en_US" is key to lookup in `ispell-local-dictionary-alist`
+(setq ispell-local-dictionary-alist
+      '(("en_US" "[[:alpha:]]" "[^[:alpha:]]" "[']" nil ("-d" "en_US") nil utf-8)))
 (require 'flyspell)
-
-;;(add-to-list 'exec-path "D:/Install/hunspell/src/tools/")
-;;(setq ispell-program-name (locate-file "hunspell"
-;;             exec-path exec-suffixes 'file-executable-p))
-;;(add-to-list 'ispell-local-dictionary-alist '("english-hunspell"
-;;                                              "[[:alpha:]]"
-;;                                              "[^[:alpha:]]"
- ;;                                             "[']"
-;;                                              t
-;;                                              ("-d" "en_US")
-;;                                              nil
-;;                                              iso-8859-1))
-
-;;(setq ispell-program-name "hunspell"          ; Use hunspell to correct mistakes
-;;      ispell-dictionary   "deutsch-hunspell") ; Default dictionary to use		
 
 (require 'init-prog-lang-tex)
 (setq debug-on-error t)

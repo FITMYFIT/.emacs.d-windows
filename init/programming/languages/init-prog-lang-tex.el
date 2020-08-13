@@ -41,7 +41,7 @@
 (setq TeX-source-correlate-mode t) 
 (setq TeX-source-correlate-method 'synctex) 
 (setq TeX-view-program-list 
- '(("Sumatra PDF" ("\"C:/Program Files/SumatraPDF-3.1.2-64/SumatraPDF.exe\" -reuse-instance" (mode-io-correlate " -forward-search %b %n ") " %o")))) 
+ '(("Sumatra PDF" ("\"C:/Users/MECHREVO/AppData/Local/SumatraPDF/SumatraPDF.exe\" -reuse-instance" (mode-io-correlate " -forward-search %b %n ") " %o")))) 
 ;; 打开TeX文件时应该加载的mode/执行的命令
 (defun my-latex-hook ()
   (turn-on-cdlatex) ;; 加载cdlatex
